@@ -24,3 +24,10 @@ export const loadCsv = async (dataUrl) => {
 	const text = await res.text();
 	return processCsv(text);
 };
+
+export async function fetchHistory(idx) {
+  const res = await fetch('https://api.github.com/repos/cristianpb/playlists/commits?sha=data')
+  const commits = await res.json()
+  return await loadCsv(`https://raw.githubusercontent.com/cristianpb/playlists/${commits[idx].sha}/data.csv`)
+}
+

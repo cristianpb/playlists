@@ -5,8 +5,8 @@
 	import Table from '../components/views/Table.svelte';
 
 	onMount(async () => {
-		$data = await loadCsv('data.csv');
-		$oldData = await loadCsv('dataOld.csv');
+		$data = await fetchHistory(0);
+		$oldData = await fetchHistory(1);
 	});
 </script>
 
