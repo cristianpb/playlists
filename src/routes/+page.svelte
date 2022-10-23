@@ -1,0 +1,34 @@
+<script>
+	import { onMount } from 'svelte';
+	import { loadCsv } from '../components/tools/getData';
+	import { data, oldData } from '../components/tools/stores';
+	import Table from '../components/views/Table.svelte';
+
+	onMount(async () => {
+		$data = await loadCsv('data.csv');
+		$oldData = await loadCsv('dataOld.csv');
+	});
+</script>
+
+<svelte:head>
+	<title>Playlists</title>
+	<meta name="description" content="Playlists app" />
+</svelte:head>
+
+<div class="app">
+	<Table />
+</div>
+
+<style>
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 0.6;
+	}
+
+	h1 {
+		width: 100%;
+	}
+</style>
