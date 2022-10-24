@@ -11,3 +11,4 @@ node_modules
 playlists.yaml
 .env
 tmpplaylists
+static/data

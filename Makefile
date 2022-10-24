@@ -9,15 +9,15 @@ encrypt:
 decrypt:
 	@bash decrypt_secret.sh
 
-data:
+static/data:
 	@echo "Creating data folder"
-	@mkdir -p data
+	@mkdir -p static/data
 
 tmpplaylists:
 	@echo "Creating tmp folder"
 	@mkdir -p tmpplaylists
 
-download-data: tmpplaylists data
+download-data: tmpplaylists static/data
 	@echo "Download data"
 	@python download.py
 

@@ -22,7 +22,7 @@ def read_data():
             position=lambda x: x.index + 1)], ignore_index=True
             )
     cols = ['name', 'artists', 'album_name', 'date', 'song_id', 'cover_url', 'playlist', 'position']
-    df[cols].to_csv('static/data.csv', index=False, header=True, sep=";")
+    df[cols].to_csv('static/data/data.csv', index=False, header=True, sep=";")
 
 
 with open('playlists.yaml', 'r') as f:
