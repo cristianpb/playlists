@@ -2,7 +2,7 @@
 	import { data, oldData } from '../tools/stores';
 
 	let tableRows = [];
-	let playlists = new Set();
+	let playlists = [];
 	let selected;
 
 	const unsubscribe = data.subscribe((myData) => {
@@ -28,7 +28,6 @@
 			} else {
 				tableRows = [...tableRows, item];
 			}
-			playlists.add(item.playlist);
 		});
 
 		$oldData.forEach((item) => {
@@ -37,20 +36,18 @@
 				tableRows = [...tableRows, { ...item, attribute: '-' }];
 			}
 		});
+    playlists = [...new Set(myData.map(item => item.playlist))]
 	});
 </script>
 
-{#if playlists && playlists.size > 0}
+{#if tableRows && playlists.length > 0}
 	<select bind:value={selected}>
-		{#each [...playlists] as playlist}
+		{#each playlists as playlist}
 			<option value={playlist}>
 				{playlist}
 			</option>
 		{/each}
 	</select>
-{/if}
-
-{#if tableRows}
 	<div class="table-container">
 		<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
 			<thead>

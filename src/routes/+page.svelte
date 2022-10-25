@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import { loadCsv } from '../components/tools/getData';
+	import { fetchHistory } from '../components/tools/getData';
 	import { data, oldData } from '../components/tools/stores';
 	import Table from '../components/views/Table.svelte';
 
