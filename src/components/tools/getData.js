@@ -28,6 +28,7 @@ export const loadCsv = async (dataUrl) => {
 export async function fetchHistory(idx) {
   const res = await fetch('https://api.github.com/repos/cristianpb/playlists/commits?sha=data')
   const commits = await res.json()
-  return await loadCsv(`https://raw.githubusercontent.com/cristianpb/playlists/${commits[idx].sha}/data.csv`)
+  const commitDate = new Date(commits[idx].commit.author.date)
+  const data = await loadCsv(`https://raw.githubusercontent.com/cristianpb/playlists/${commits[idx].sha}/data.csv`)
+  return {commitDate, data}
 }
-

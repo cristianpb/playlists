@@ -7,22 +7,23 @@
 
   const unsubscribe = data.subscribe((myData) => {
     const oldUnsubscribe = oldData.subscribe(myOldData => {
-      if (myData.length > 0 && myOldData.length > 0) {
+      console.log(myData);
+      if (myData && myOldData && myData.data.length > 0 && myOldData.data.length > 0) {
         tableRows = []
-        myData.forEach((item, idx) => {
-          myOldData.forEach((oldItem, oldIdx) => {
+        myData.data.forEach((item, idx) => {
+          myOldData.data.forEach((oldItem, oldIdx) => {
             if ((item.playlist == oldItem.playlist) && (item.song_id === oldItem.song_id)) {
               // still in the playlist but in different position
               // 0 for the same position
               // + for better position
               // - for worse position
-              myData[idx].attribute = oldItem.position - item.position;
-              myOldData[oldIdx].attribute = item.position - oldItem.position;
+              myData.data[idx].attribute = oldItem.position - item.position;
+              myOldData.data[oldIdx].attribute = item.position - oldItem.position;
             }
           });
         });
 
-        myData.forEach((item) => {
+        myData.data.forEach((item) => {
           // new song
           if (!('attribute' in item)) {
             tableRows = [...tableRows, { ...item, attribute: '+' }];
@@ -31,13 +32,13 @@
           }
         });
 
-        myOldData.forEach((item) => {
+        myOldData.data.forEach((item) => {
           // removed song
           if (!('attribute' in item)) {
             tableRows = [...tableRows, { ...item, attribute: '-' }];
           }
         });
-        playlists = [...new Set(myData.map(item => item.playlist))]
+        playlists = [...new Set(myData.data.map(item => item.playlist))]
       }
     })
   });
@@ -51,6 +52,7 @@
       </option>
     {/each}
   </select>
+  <p>From: {$oldData.commitDate.toLocaleDateString('en-US')} to: {$data.commitDate.toLocaleDateString('en-US')}</p>
   {#if tableRows.length > 0}
     <div class="table-container">
       <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">

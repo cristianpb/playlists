@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
 
-export const data = writable([]);
+export const data = writable(null);
 
-export const oldData = writable([]);
+export const oldData = writable(null);
