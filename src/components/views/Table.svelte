@@ -7,7 +7,6 @@
 
   const unsubscribe = data.subscribe((myData) => {
     const oldUnsubscribe = oldData.subscribe(myOldData => {
-      console.log(myData);
       if (myData && myOldData && myData.data.length > 0 && myOldData.data.length > 0) {
         tableRows = []
         myData.data.forEach((item, idx) => {
