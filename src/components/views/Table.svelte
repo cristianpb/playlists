@@ -37,7 +37,7 @@
             tableRows = [...tableRows, { ...item, attribute: '-' }];
           }
         });
-        playlists = [...new Set(myData.data.map(item => item.playlist))]
+        playlists = [...new Set(myData.data.map(item => item.playlist))].sort()
       }
     })
   });
