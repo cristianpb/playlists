@@ -7,7 +7,7 @@ import pandas as pd
 from yaml.loader import SafeLoader
 
 def download(key, url):
-    cmd="docker run --rm -v ${PWD}/tmpplaylists:/music  spotdl/spotify-downloader save "f"${url.strip()} --save-file {key}.spotdl"
+    cmd="docker run --rm -v ${PWD}/tmpplaylists:/music  spotdl/spotify-downloader save "f"{url.strip()} --save-file {key}.spotdl"
     process=subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
     output = process.stdout.read().decode('utf-8')
     print("OUT: "+output)
