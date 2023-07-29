@@ -2,19 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/playlists/favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="/playlists/_app/immutable/assets/_layout-c59af370.css" rel="stylesheet">
-		<link rel="modulepreload" href="/playlists/_app/immutable/start-f37d38a6.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/chunks/index-1918b0bc.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/chunks/singletons-9201ba50.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/components/pages/_layout.svelte-27dc7920.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/chunks/stores-b27d45e7.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/components/pages/_page.svelte-23e4fe1c.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/chunks/stores-19686917.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/modules/pages/_page.js-32d8ae81.js">
-		<link rel="modulepreload" href="/playlists/_app/immutable/chunks/_page-0df15927.js"><title>Playlists</title><!-- HEAD_svelte-pm5yr4_START --><meta name="description" content="Playlists app"><!-- HEAD_svelte-pm5yr4_END -->
+		
+		<link href="./_app/immutable/assets/0.a1a86f19.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.f21be33f.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.c4dc9443.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.3f6711ca.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.4cb20944.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.ed66611e.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.c89a1ee4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.e7840315.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.b47032cf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/stores.a47314f6.js"><title>Playlists</title><!-- HEAD_svelte-pm5yr4_START --><meta name="description" content="Playlists app"><!-- HEAD_svelte-pm5yr4_END -->
 	</head>
 	<body data-sveltekit-prefetch>
 		<div>
@@ -39,25 +39,32 @@
 </div>
 
 
-		<script type="module" data-sveltekit-hydrate="y0mpud">
-			import { start } from "/playlists/_app/immutable/start-f37d38a6.js";
+			
+			<script>
+				{
+					__sveltekit_1ghc8hj = {
+						assets: "/playlists",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				env: {},
-				hydrate: {
-					status: 200,
-					error: null,
-					node_ids: [0, 2],
-					params: {},
-					routeId: "/",
-					data: (function(a){return [a,a]}(null)),
-					form: null
-				},
-				paths: {"base":"/playlists","assets":"/playlists"},
-				target: document.querySelector('[data-sveltekit-hydrate="y0mpud"]').parentNode,
-				trailing_slash: "never"
-			});
-		</script>
-	</div>
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.f21be33f.js"),
+						import("./_app/immutable/entry/app.ed66611e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
