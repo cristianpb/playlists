@@ -1,16 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
+import os
 import glob
 import yaml
 import subprocess
 import pandas as pd
 from yaml.loader import SafeLoader
 
+
+CWD = os.getcwd()
+
 def download(key, url):
-    cmd="docker run --rm -v ${PWD}/tmpplaylists:/music  spotdl/spotify-downloader save "f"{url.strip()} --save-file {key}.spotdl"
-    process=subprocess.Popen(cmd, shell=True, stderr=subprocess.STDOUT, stdout=subprocess.PIPE)
-    output = process.stdout.read().decode('utf-8')
-    print("OUT: "+output)
+    cmd=f"docker run --rm -v {CWD}/tmpplaylists:/music spotdl/spotify-downloader save {url.strip()} --save-file {key}.spotdl"
+    p=subprocess.Popen(cmd.split(" "),
+                             stderr=subprocess.STDOUT,
+                             stdout=subprocess.PIPE)
+    for line in iter(p.stdout.readline, b''):
+        print(f">>> {line.rstrip().decode('utf-8')}")
 
 
 def read_data():
@@ -25,8 +31,9 @@ def read_data():
     df[cols].to_csv('static/data/data.csv', index=False, header=True, sep=";")
 
 
-with open('playlists.yaml', 'r') as f:
-    data = list(yaml.load_all(f, Loader=SafeLoader))[0]
-    for key, url in data.items():
-        download(key, url)
-read_data()
+if __name__ == '__main__':
+    with open('playlists.yaml', 'r') as f:
+        data = list(yaml.load_all(f, Loader=SafeLoader))[0]
+        for key, url in data.items():
+            download(key, url)
+    read_data()
