@@ -20,15 +20,22 @@ def download(key, url):
 
 
 def read_data():
-    df = pd.DataFrame()
-    for f in glob.glob('tmpplaylists/*.spotdl'):
-        df = pd.concat([df, pd.read_json(f).assign(
-            artists=lambda x: x['artists'].explode().str.replace("'","").str.replace("\"", "").reset_index().groupby('index').agg({'artists': lambda y: y.tolist()}),
-            playlist=f.split("/")[1].split(".")[0],
-            position=lambda x: x.index + 1)], ignore_index=True
-            )
+    appended_data = []
     cols = ['name', 'artists', 'album_name', 'date', 'song_id', 'cover_url', 'playlist', 'position']
-    df[cols].to_csv('static/data/data.csv', index=False, header=True, sep=";")
+    for f in glob.glob('tmpplaylists/*.spotdl'):
+        data = pd.read_json(f).assign(
+                artists=lambda x: x['artists'].explode().str.replace("'","").str.replace("\"", "").reset_index().groupby('index').agg({'artists': lambda y: y.tolist()}),
+                playlist=f.split("/")[1].split(".")[0],
+                position=lambda x: x.index + 1
+                )
+        assert len(set(cols).difference(data.columns)) == 0, f'Columns: {", ".join(data.columns)}'
+        assert len(data) > 0, f"Shape {data.shape[0]} and {data.shape[1]} columns"
+        appended_data.append(data)
+    (
+            pd.concat(appended_data, ignore_index=True)
+            .get(cols)
+            .to_csv('static/data/data.csv', index=False, header=True, sep=";")
+    )
 
 
 if __name__ == '__main__':
