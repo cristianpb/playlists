@@ -7,7 +7,7 @@ on:
     - cron: '0 4 * * 5'
 
 env:
-  python-version: "3.10"
+  python-version: "3.11"
 
 jobs:
   publish:
@@ -30,7 +30,7 @@ jobs:
         env:
           GPG_SECRET_PASSPHRASE: ${{ secrets.GPG_SECRET_PASSPHRASE }}
       - name: install python requirements
-        run: pip install -r requirements.txt
+        run: pip install .
       - name: get data
         run: |
           make download-data
