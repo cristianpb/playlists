@@ -1,70 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		
-		<link href="./_app/immutable/assets/0.a1a86f19.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.7acb643d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.c4dc9443.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.879df4ea.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.4cb20944.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.a37ea69d.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.2f1be356.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.ba3c27e1.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.b47032cf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.a47314f6.js"><title>Playlists</title><!-- HEAD_svelte-pm5yr4_START --><meta name="description" content="Playlists app"><!-- HEAD_svelte-pm5yr4_END -->
-	</head>
-	<body data-sveltekit-prefetch>
-		<div>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>New songs | Playlists dashboard</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-sun-faded.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_import/components/tools.js?sha=a704960ac5225f218e483499a06fb1e38a7696cb5677ff48aea584fae3d71e28">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.13/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/binary-search-bounds@2.0.5/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-axis@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-brush@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-chord@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-color@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-contour@4.0.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-delaunay@6.0.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dispatch@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-drag@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dsv@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-ease@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-fetch@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-force@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-format@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-geo@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-hierarchy@3.1.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-interpolate@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-path@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-polygon@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-quadtree@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-random@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale@4.0.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-selection@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-shape@3.2.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time-format@4.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-timer@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-transition@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-zoom@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3@7.8.5/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/delaunator@5.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/htl@0.3.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/internmap@2.0.3/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/interval-tree-1d@1.0.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/isoformat@0.2.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/robust-predicates@3.0.2/+esm">
+<script type="module">
 
+import {define} from "./_observablehq/client.js";
 
-<div class="app svelte-8o1gnw"><header class="svelte-9fykbk"><div class="corner svelte-9fykbk"><p></p></div>
+define({id: "2170f6c2", inputs: ["FileAttachment"], outputs: ["mostFrequent","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestArtists","diffData","predictions"], files: [{"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.csv"},{"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.csv"},{"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.csv"}], body: async (FileAttachment) => {
+const {mostFrequent, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=a704960ac5225f218e483499a06fb1e38a7696cb5677ff48aea584fae3d71e28");
+const latestArtists = await FileAttachment("data/latestArtists.csv").csv({typed: true})
+const diffData = await FileAttachment("data/playlistdiff.csv").csv({typed: true})
+const predictions = await FileAttachment("data/bestArtists.csv").csv({typed: true})
 
-	<nav class="svelte-9fykbk"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-9fykbk"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-9fykbk"></path></svg>
-		<ul class="svelte-9fykbk"><li class="svelte-9fykbk"><a href="/playlists/" class="svelte-9fykbk">Home</a></li>
-			<li class="svelte-9fykbk"><a href="/playlists/stats" class="svelte-9fykbk">Stats</a></li></ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-9fykbk"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-9fykbk"></path></svg></nav>
+return {mostFrequent,BestSongsPlot,BestArtistsPlot,RecentSongAdds,RecentSongsPlot,latestArtists,diffData,predictions};
+}});
 
-	<div class="corner svelte-9fykbk"><p></p></div>
-</header>
+define({id: "4eb4c453", inline: true, inputs: ["RecentSongsPlot","latestArtists","display"], body: async (RecentSongsPlot,latestArtists,display) => {
+display(await(
+RecentSongsPlot(latestArtists)
+))
+}});
 
-	<main class="svelte-8o1gnw">
+define({id: "18450dd5", inline: true, inputs: ["diffData","display"], body: async (diffData,display) => {
+display(await(
+Array.from(new Set(diffData.map(i => i.commit_date)))[1].slice(0, 11)
+))
+}});
 
-<div class="app">
-</div></main>
+define({id: "7f08daec", inline: true, inputs: ["diffData","display"], body: async (diffData,display) => {
+display(await(
+Array.from(new Set(diffData.map(i => i.commit_date)))[0].slice(0,11)
+))
+}});
 
-	<footer class="svelte-8o1gnw"><p>source code <a href="https://github.com/cristianpb/playlists" class="svelte-8o1gnw">github.com/cristianpb/playlists</a></p></footer>
+define({id: "3ea5382b", inputs: ["predictions","view","Inputs"], outputs: ["playlistsNames","playlistChoosen","artistsNames"], body: (predictions,view,Inputs) => {
+const playlistsNames = predictions.map(i => i.playlist)
+const playlistChoosen = view(Inputs.select(new Set(playlistsNames), {value: playlistsNames[0], label: "Playlists"}));
+const artistsNames = predictions.map(i => i.artists)
+return {playlistsNames,playlistChoosen,artistsNames};
+}});
+
+define({id: "0b52f6ab", inputs: ["RecentSongAdds","diffData","playlistChoosen"], outputs: ["tableRows"], body: (RecentSongAdds,diffData,playlistChoosen) => {
+const tableRows = RecentSongAdds(diffData, playlistChoosen)
+return {tableRows};
+}});
+
+define({id: "5ef12b33", inline: true, inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
+display(await(
+Inputs.table(tableRows.filter(i => i.attribute == "+"), {
+  columns: ["position", "artists", "name", "album_name", "attribute"],
+  align: {"position": "left"},
+  format: {
+    attribute: (x) => x == "+" ? "New!" : x == "-" ? "🗑" : x > 0 ? `⬆${x}` : x == 0 ? '--' : `⬇${Math.abs(x)}`
+  }
+})
+))
+}});
+
+define({id: "178a1ae7", inline: true, inputs: ["BestArtistsPlot","predictions","playlistChoosen","display"], body: async (BestArtistsPlot,predictions,playlistChoosen,display) => {
+display(await(
+BestArtistsPlot(predictions.filter(row => (row.playlist == playlistChoosen) & (predictions.filter(i => i.playlist == playlistChoosen).map(i => i.artists).slice(0,10).includes(row.artists))), playlistChoosen)
+))
+}});
+
+define({id: "bcdba9c7", inputs: ["view","Inputs","mostFrequent","predictions","playlistChoosen","artistsNames"], outputs: ["mostPopularArtists"], body: (view,Inputs,mostFrequent,predictions,playlistChoosen,artistsNames) => {
+const mostPopularArtists = view(Inputs.select(mostFrequent(predictions.filter(i => i.playlist == playlistChoosen).map(i => i.artists)).slice(0,10), {value: artistsNames[0], label: "Popular artists"}));
+return {mostPopularArtists};
+}});
+
+define({id: "56e84c08", inline: true, inputs: ["BestSongsPlot","predictions","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,predictions,playlistChoosen,mostPopularArtists,display) => {
+display(await(
+BestSongsPlot(predictions.filter(row => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists))), playlistChoosen, mostPopularArtists)
+))
+}});
+
+define({id: "2fd89843", inline: true, inputs: ["Inputs","predictions","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,predictions,playlistChoosen,mostPopularArtists,display) => {
+display(await(
+Inputs.table(predictions
+  .filter((row, index) => predictions.map(i =>  `${i.name}${i.artists}${i.album_name}`).indexOf(`${row.name}${row.artists}${row.album_name}`) === index)
+  .filter((row, index) => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists)))
+  , {
+  columns: ["artists", "name", "album_name", "date"],
+  })
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="new-songs" tabindex="-1"><a class="observablehq-header-anchor" href="#new-songs">New songs</a></h1>
+<p>Recent songs from the last month.</p>
+<div id="cell-2170f6c2" class="observablehq observablehq--block"></div>
+<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
+  <div class="card">
+    <span id="cell-4eb4c453" class="observablehq--loading"></span>
+  </div>
 </div>
-
-
-			
-			<script>
-				{
-					__sveltekit_1thl0wt = {
-						assets: "/playlists",
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.7acb643d.js"),
-						import("./_app/immutable/entry/app.a37ea69d.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+<h1 id="playlist-details" tabindex="-1"><a class="observablehq-header-anchor" href="#playlist-details">Playlist details</a></h1>
+<p>From <span id="cell-18450dd5" class="observablehq--loading"></span> to <span id="cell-7f08daec" class="observablehq--loading"></span> new songs have been added to the playlist.</p>
+<div id="cell-3ea5382b" class="observablehq observablehq--block"></div>
+<div id="cell-0b52f6ab" class="observablehq observablehq--block"></div>
+<div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
+  <span id="cell-5ef12b33" class="observablehq--loading"></span>
+</div>
+<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
+  <div class="card">
+    <span id="cell-178a1ae7" class="observablehq--loading"></span>
+  </div>
+</div>
+<div id="cell-bcdba9c7" class="observablehq observablehq--block"></div>
+<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
+  <div class="card">
+    <span id="cell-56e84c08" class="observablehq--loading"></span>
+  </div>
+</div>
+<div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
+  <span id="cell-2fd89843" class="observablehq--loading"></span>
+</div>
+</main>
+</div>
