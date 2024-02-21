@@ -12,3 +12,7 @@ playlists.yaml
 .env
 tmpplaylists
 static/data
+dist
+.observablehq
+*.pkl
+venv
