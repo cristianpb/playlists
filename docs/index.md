@@ -9,7 +9,7 @@ theme: [sun-faded]
 Recent songs from the last month.
 
 ```js
-import {mostFrequent, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} from "./components/tools.js";
+import {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} from "./components/tools.js";
 const latestArtists = await FileAttachment("data/latestArtists.csv").csv({typed: true})
 const diffData = await FileAttachment("data/playlistdiff.csv").csv({typed: true})
 const predictions = await FileAttachment("data/bestArtists.csv").csv({typed: true})
@@ -24,7 +24,7 @@ const predictions = await FileAttachment("data/bestArtists.csv").csv({typed: tru
 
 # Playlist details
 
-From ${Array.from(new Set(diffData.map(i => i.commit_date)))[1].slice(0, 11)} to ${Array.from(new Set(diffData.map(i => i.commit_date)))[0].slice(0,11)} new songs have been added to the playlist.
+From ${Array.from(new Set(diffData.map(i => parseDate(i.commit_date))))[1]} to ${Array.from(new Set(diffData.map(i => parseDate(i.commit_date))))[0]} new songs have been added to the playlist.
 
 
 ```js
@@ -69,7 +69,7 @@ const mostPopularArtists = view(Inputs.select(mostFrequent(predictions.filter(i 
 
 <div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
   ${Inputs.table(predictions
-  .filter((row, index) => predictions.map(i =>  `${i.name}${i.artists}${i.album_name}`).indexOf(`${row.name}${row.artists}${row.album_name}`) === index)
+  .filter((row, index) => predictions.map(i =>  `${i.song_id}${i.artists}`).indexOf(`${row.song_id}${row.artists}`) === index)
   .filter((row, index) => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists)))
   , {
   columns: ["artists", "name", "album_name", "date"],

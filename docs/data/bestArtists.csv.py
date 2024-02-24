@@ -28,7 +28,7 @@ playlist_choosen = ['MuseRadio', 'MorningMotivation', 'VivaLatino',
     df
     .query('playlist in @playlist_choosen')
     .explode('artists')
-    .explode('artists').groupby('playlist').apply(top_artists)
+    .groupby('playlist').apply(top_artists)
     .assign(commit_date = lambda x: pd.to_datetime(x['commit_date']).dt.strftime("%Y-%m-%d"))
     .get(['date', 'commit_date', 'song_id', 'artists', 'position', 'playlist', 'name', 'album_name'])
     .to_csv(sys.stdout, index=False)
