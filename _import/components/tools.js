@@ -9,6 +9,17 @@ export const mostFrequent = arr => {
   return Object.entries(counts).sort((a, b) => b[1] - a[1]).map(i => i[0])
 }
 
+export const parseDate = date_in => {
+  try {
+    const res = `${date_in.getDate()}-${date_in.getMonth() + 1}-${date_in.getFullYear()}`
+    return res
+  } catch (e) {
+    /* handle error */
+    console.log(date_in, e);
+    return "Error"
+  }
+}
+
 const getDateXDaysAgo = (numOfDays, date = new Date()) => {
   const daysAgo = new Date(date.getTime());
   daysAgo.setDate(date.getDate() - numOfDays);
@@ -192,7 +203,11 @@ export function BestArtistsPlot(data_shallow, playlistChoosen) {
   );
 }
 
-export function RecentSongAdds(data, playlistChoosen) {
+export function RecentSongAdds(data_shallow, playlistChoosen) {
+  const data = JSON.parse(JSON.stringify(data_shallow));
+  data.forEach((row, idx) => {
+    data[idx].commit_date = parseDate(new Date(row.commit_date))
+  });
   const commits_date = Array.from(new Set(data.map(i => i.commit_date)))
   const recentData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commits_date[0]))
   const pastData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commits_date[1]))
