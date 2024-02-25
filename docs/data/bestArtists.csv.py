@@ -12,18 +12,18 @@ def top_artists(df_tmp):
     best_artists = df_tmp['artists'].value_counts().index.tolist()[:10]
     return df_tmp.query('artists in @best_artists')
 
-playlist_choosen = ['MuseRadio', 'MorningMotivation', 'VivaLatino',
-                    'GrandHit', 'GardeLaPeche', 'WakeUpHappy', 'Mint',
-                    'GooseBumps', 'PopRockRadio',
-                    'JazzintheBackground', 'PopRock',
-                    'BigOnTheInternet', 'NewMusicFriday', 'FreshFinds',
-                    'Workout', 'TodayTopHits', 'ThisIsGustavoCerati',
-                    'HitRadioFr', 'RockClassics', 'CafeCroissant',
-                    'AllOut2000s', 'JustHits', 'RockThis',
-                    'ReveilDouceur', 'TheStrokesRadio', 'RockParty',
-                    'PowerWorkout', 'GustavoCeratiRadio',
-                    'ColdplayRadio', 'ItsAllGood', 'FutursHits'
+playlist_choosen = ['AllOut2000s', 'BigOnTheInternet', 'CafeCroissant',
+                    'ColdplayRadio', 'FreshFinds', 'FutursHits' 'GardeLaPeche',
+                    'GooseBumps', 'GrandHit', 'GustavoCeratiRadio',
+                    'HitRadioFr', 'ItsAllGood', 'JazzintheBackground',
+                    'JustHits', 'Mint', 'MorningMotivation', 'MuseRadio',
+                    'NewMusicFriday', 'PopRock', 'PopRockRadio',
+                    'PowerWorkout', 'ReveilDouceur', 'RockClassics',
+                    'RockParty', 'RockThis', 'TheStrokesRadio',
+                    'ThisIsGustavoCerati', 'TodayTopHits', 'VivaLatino',
+                    'WakeUpHappy', 'Workout'
                     ]
+
 (
     df
     .query('playlist in @playlist_choosen')
