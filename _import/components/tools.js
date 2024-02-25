@@ -125,33 +125,28 @@ export function RecentSongsPlot(data_shallow) {
 }
 
 
-export function BestSongsPlot(data_shallow, playlistChoosen, mostPopularArtists) {
-  const data = JSON.parse(JSON.stringify(data_shallow));
-  data.forEach((row, idx) => {
-    data[idx].commit_date = new Date(row.commit_date)
-    data[idx].name = data[idx].name.toLowerCase()
-  });
+export function BestSongsPlot(data, playlistChoosen, mostPopularArtists) {
+  const data_filtered = data.filter(row => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists)))
   return resize((width, height) =>
     Plot.plot({
             grid: true,
             width,
             height: height - 95,
-            title : "Best songs",
+            title : `Best songs for ${mostPopularArtists} in ${playlistChoosen}`,
             color: {
               legend: false,
             },
             x: {label: "Date"},
             y: {label: "Position"},
             marks: [
-              Plot.line(data.filter(row => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists))), {
-                //filter: ,
+              Plot.line(data_filtered, {
                 x: "commit_date",
                 y: "position",
                 stroke: "name",
                 text: "name",
                 tip: {channels: {"artists": "artists", "playlist": "playlist"}}
               }),
-              Plot.text(data.filter(row => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists))), {
+              Plot.text(data_filtered, {
                 filter: (d, idx) => (idx) % 5 === 0 ,
                 x: "commit_date",
                 y: "position",
@@ -164,33 +159,31 @@ export function BestSongsPlot(data_shallow, playlistChoosen, mostPopularArtists)
   );
 }
 
-export function BestArtistsPlot(data_shallow, playlistChoosen) {
-  const data = JSON.parse(JSON.stringify(data_shallow));
-  data.forEach((row, idx) => {
-    data[idx].commit_date = new Date(row.commit_date)
-  });
+export function BestArtistsPlot(data, playlistChoosen) {
+  const data_filtered = data
+    .filter((value, index) => data.map(i => `${i.artists}${i.commit_date_str}`).indexOf(`${value.artists}${value.commit_date_str}`) === index)
+    .filter(row => (row.playlist == playlistChoosen) & (data.filter(i => i.playlist == playlistChoosen).map(i => i.artists).slice(0,10).includes(row.artists)))
   return resize((width, height) =>
     Plot.plot({
       grid: true,
       width,
       height: height - 95,
-      title : "Best artist evolution",
+      title : `Best artist evolution in ${playlistChoosen}`,
       color: {
         legend: false,
       },
       x: {label: "Date"},
       y: {label: "Position"},
       marks: [
-        Plot.line(data.filter(row => (row.playlist == playlistChoosen))
-          .filter((value, index) => data.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
+        Plot.line(data_filtered
           , {
             x: "commit_date",
             y: "position",
             stroke: "artists",
             tip: {channels: {"artists": "artists", "playlist": "playlist"}}
           }),
-        Plot.text(data.filter(row => (row.playlist == playlistChoosen))
-          .filter((value, index) => data.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index), {
+        Plot.text(data_filtered
+      , {
           filter: (d, idx) => (idx) % 5 === 0 ,
           x: "commit_date",
           y: "position",
@@ -203,14 +196,9 @@ export function BestArtistsPlot(data_shallow, playlistChoosen) {
   );
 }
 
-export function RecentSongAdds(data_shallow, playlistChoosen) {
-  const data = JSON.parse(JSON.stringify(data_shallow));
-  data.forEach((row, idx) => {
-    data[idx].commit_date = parseDate(new Date(row.commit_date))
-  });
-  const commits_date = Array.from(new Set(data.map(i => i.commit_date)))
-  const recentData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commits_date[0]))
-  const pastData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commits_date[1]))
+export function RecentSongAdds(data, playlistChoosen, commit_date_old, commit_date_recent) {
+  const recentData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commit_date_recent))
+  const pastData = data.filter(i => (i.playlist == playlistChoosen) & (i.commit_date == commit_date_old))
 
   let tableRows = []
   recentData.forEach((item, idx) => {
@@ -242,5 +230,6 @@ export function RecentSongAdds(data_shallow, playlistChoosen) {
     }
   });
           
-  return tableRows//.filter((value, index) => tableRows.map(i => `${i.song_id}${i.commit_date}`).indexOf(`${value.song_id}${value.commit_date}`) === index)
+  return tableRows.filter(i => i.attribute == "+")
+  //.filter((value, index) => tableRows.map(i => `${i.song_id}${i.commit_date}`).indexOf(`${value.song_id}${value.commit_date}`) === index)
 }

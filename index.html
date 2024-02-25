@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
-<link rel="modulepreload" href="./_import/components/tools.js?sha=7046813f07624e19394721ca6a34c2243028e36060a707cba8383908cd5eedbe">
+<link rel="modulepreload" href="./_import/components/tools.js?sha=b5246177175a88ef23edf1e3851114bdc4abbd22af5b12f2439b74f32ff4c5dc">
 <link rel="modulepreload" href="./_observablehq/client.js">
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
@@ -57,48 +57,66 @@
 
 import {define} from "./_observablehq/client.js";
 
-define({id: "770c8eb1", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestArtists","diffData","predictions"], files: [{"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.csv"},{"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.csv"},{"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.csv"}], body: async (FileAttachment) => {
-const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=7046813f07624e19394721ca6a34c2243028e36060a707cba8383908cd5eedbe");
-const latestArtists = await FileAttachment("data/latestArtists.csv").csv({typed: true})
-const diffData = await FileAttachment("data/playlistdiff.csv").csv({typed: true})
-const predictions = await FileAttachment("data/bestArtists.csv").csv({typed: true})
-
-return {mostFrequent,parseDate,BestSongsPlot,BestArtistsPlot,RecentSongAdds,RecentSongsPlot,latestArtists,diffData,predictions};
+define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], files: [{"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.csv"},{"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.csv"},{"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.csv"}], body: async (FileAttachment) => {
+const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=b5246177175a88ef23edf1e3851114bdc4abbd22af5b12f2439b74f32ff4c5dc");
+const latestSongs = await FileAttachment("data/latestArtists.csv").csv({typed: true})
+const diffData = await FileAttachment("data/playlistdiff.csv").csv().then(data => {
+      return data.map(row => {
+        row.commit_date = parseDate(new Date(row.commit_date))
+        return row
+      });
+    });
+const bestArtists = await FileAttachment("data/bestArtists.csv").csv().then(data => {
+      return data.map(row => {
+        row.commit_date_str = row.commit_date;
+        row.commit_date = new Date(row.commit_date);
+        row.name = row.name.toLowerCase();
+        row.position = +row.position;
+        return row
+      });
+    });
+return {mostFrequent,parseDate,BestSongsPlot,BestArtistsPlot,RecentSongAdds,RecentSongsPlot,latestSongs,diffData,bestArtists};
 }});
 
-define({id: "4eb4c453", inline: true, inputs: ["RecentSongsPlot","latestArtists","display"], body: async (RecentSongsPlot,latestArtists,display) => {
+define({id: "6be40f32", inline: true, inputs: ["RecentSongsPlot","latestSongs","display"], body: async (RecentSongsPlot,latestSongs,display) => {
 display(await(
-RecentSongsPlot(latestArtists)
+RecentSongsPlot(latestSongs)
 ))
 }});
 
-define({id: "d4cbe405", inline: true, inputs: ["diffData","parseDate","display"], body: async (diffData,parseDate,display) => {
+define({id: "0cd3afd3", inputs: ["diffData"], outputs: ["commit_date_old","commit_date_recent"], body: (diffData) => {
+const commit_date_old = Array.from(new Set(diffData.map(i => i.commit_date)))[1];
+const commit_date_recent = Array.from(new Set(diffData.map(i => i.commit_date)))[0];
+return {commit_date_old,commit_date_recent};
+}});
+
+define({id: "9bee6d36", inline: true, inputs: ["commit_date_old","display"], body: async (commit_date_old,display) => {
 display(await(
-Array.from(new Set(diffData.map(i => parseDate(i.commit_date))))[1]
+commit_date_old
 ))
 }});
 
-define({id: "6648e9eb", inline: true, inputs: ["diffData","parseDate","display"], body: async (diffData,parseDate,display) => {
+define({id: "a3679416", inline: true, inputs: ["commit_date_recent","display"], body: async (commit_date_recent,display) => {
 display(await(
-Array.from(new Set(diffData.map(i => parseDate(i.commit_date))))[0]
+commit_date_recent
 ))
 }});
 
-define({id: "3ea5382b", inputs: ["predictions","view","Inputs"], outputs: ["playlistsNames","playlistChoosen","artistsNames"], body: (predictions,view,Inputs) => {
-const playlistsNames = predictions.map(i => i.playlist)
+define({id: "3c7c7c53", inputs: ["bestArtists","view","Inputs"], outputs: ["playlistsNames","playlistChoosen","artistsNames"], body: (bestArtists,view,Inputs) => {
+const playlistsNames = bestArtists.map(i => i.playlist)
 const playlistChoosen = view(Inputs.select(new Set(playlistsNames), {value: playlistsNames[0], label: "Playlists"}));
-const artistsNames = predictions.map(i => i.artists)
+const artistsNames = bestArtists.map(i => i.artists)
 return {playlistsNames,playlistChoosen,artistsNames};
 }});
 
-define({id: "0b52f6ab", inputs: ["RecentSongAdds","diffData","playlistChoosen"], outputs: ["tableRows"], body: (RecentSongAdds,diffData,playlistChoosen) => {
-const tableRows = RecentSongAdds(diffData, playlistChoosen)
+define({id: "6153a948", inputs: ["RecentSongAdds","diffData","playlistChoosen","commit_date_old","commit_date_recent"], outputs: ["tableRows"], body: (RecentSongAdds,diffData,playlistChoosen,commit_date_old,commit_date_recent) => {
+const tableRows = RecentSongAdds(diffData, playlistChoosen, commit_date_old, commit_date_recent)
 return {tableRows};
 }});
 
-define({id: "5ef12b33", inline: true, inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
+define({id: "61b254b6", inline: true, inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
 display(await(
-Inputs.table(tableRows.filter(i => i.attribute == "+"), {
+Inputs.table(tableRows, {
   columns: ["position", "artists", "name", "album_name", "attribute"],
   align: {"position": "left"},
   format: {
@@ -108,27 +126,27 @@ Inputs.table(tableRows.filter(i => i.attribute == "+"), {
 ))
 }});
 
-define({id: "178a1ae7", inline: true, inputs: ["BestArtistsPlot","predictions","playlistChoosen","display"], body: async (BestArtistsPlot,predictions,playlistChoosen,display) => {
+define({id: "8241dd1b", inline: true, inputs: ["BestArtistsPlot","bestArtists","playlistChoosen","display"], body: async (BestArtistsPlot,bestArtists,playlistChoosen,display) => {
 display(await(
-BestArtistsPlot(predictions.filter(row => (row.playlist == playlistChoosen) & (predictions.filter(i => i.playlist == playlistChoosen).map(i => i.artists).slice(0,10).includes(row.artists))), playlistChoosen)
+BestArtistsPlot(bestArtists, playlistChoosen)
 ))
 }});
 
-define({id: "bcdba9c7", inputs: ["view","Inputs","mostFrequent","predictions","playlistChoosen","artistsNames"], outputs: ["mostPopularArtists"], body: (view,Inputs,mostFrequent,predictions,playlistChoosen,artistsNames) => {
-const mostPopularArtists = view(Inputs.select(mostFrequent(predictions.filter(i => i.playlist == playlistChoosen).map(i => i.artists)).slice(0,10), {value: artistsNames[0], label: "Popular artists"}));
+define({id: "06634e09", inputs: ["view","Inputs","mostFrequent","bestArtists","playlistChoosen","artistsNames"], outputs: ["mostPopularArtists"], body: (view,Inputs,mostFrequent,bestArtists,playlistChoosen,artistsNames) => {
+const mostPopularArtists = view(Inputs.select(mostFrequent(bestArtists.filter(i => i.playlist == playlistChoosen).map(i => i.artists)).slice(0,10), {value: artistsNames[0], label: "Popular artists"}));
 return {mostPopularArtists};
 }});
 
-define({id: "56e84c08", inline: true, inputs: ["BestSongsPlot","predictions","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,predictions,playlistChoosen,mostPopularArtists,display) => {
+define({id: "3339d464", inline: true, inputs: ["BestSongsPlot","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,bestArtists,playlistChoosen,mostPopularArtists,display) => {
 display(await(
-BestSongsPlot(predictions.filter(row => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists))), playlistChoosen, mostPopularArtists)
+BestSongsPlot(bestArtists, playlistChoosen, mostPopularArtists)
 ))
 }});
 
-define({id: "03560f54", inline: true, inputs: ["Inputs","predictions","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,predictions,playlistChoosen,mostPopularArtists,display) => {
+define({id: "bd09fb10", inline: true, inputs: ["Inputs","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,bestArtists,playlistChoosen,mostPopularArtists,display) => {
 display(await(
-Inputs.table(predictions
-  .filter((row, index) => predictions.map(i =>  `${i.song_id}${i.artists}`).indexOf(`${row.song_id}${row.artists}`) === index)
+Inputs.table(bestArtists
+  .filter((row, index) => bestArtists.map(i =>  `${i.song_id}${i.artists}`).indexOf(`${row.song_id}${row.artists}`) === index)
   .filter((row, index) => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists)))
   , {
   columns: ["artists", "name", "album_name", "date"],
@@ -141,32 +159,33 @@ Inputs.table(predictions
 <main id="observablehq-main" class="observablehq">
 <h1 id="new-songs" tabindex="-1"><a class="observablehq-header-anchor" href="#new-songs">New songs</a></h1>
 <p>Recent songs from the last month.</p>
-<div id="cell-770c8eb1" class="observablehq observablehq--block"></div>
+<div id="cell-91381f7b" class="observablehq observablehq--block"></div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-4eb4c453" class="observablehq--loading"></span>
+    <span id="cell-6be40f32" class="observablehq--loading"></span>
   </div>
 </div>
 <h1 id="playlist-details" tabindex="-1"><a class="observablehq-header-anchor" href="#playlist-details">Playlist details</a></h1>
-<p>From <span id="cell-d4cbe405" class="observablehq--loading"></span> to <span id="cell-6648e9eb" class="observablehq--loading"></span> new songs have been added to the playlist.</p>
-<div id="cell-3ea5382b" class="observablehq observablehq--block"></div>
-<div id="cell-0b52f6ab" class="observablehq observablehq--block"></div>
+<div id="cell-0cd3afd3" class="observablehq observablehq--block"></div>
+<p>From <span id="cell-9bee6d36" class="observablehq--loading"></span> to <span id="cell-a3679416" class="observablehq--loading"></span> new songs have been added to the playlist.</p>
+<div id="cell-3c7c7c53" class="observablehq observablehq--block"></div>
+<div id="cell-6153a948" class="observablehq observablehq--block"></div>
 <div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <span id="cell-5ef12b33" class="observablehq--loading"></span>
+  <span id="cell-61b254b6" class="observablehq--loading"></span>
 </div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-178a1ae7" class="observablehq--loading"></span>
+    <span id="cell-8241dd1b" class="observablehq--loading"></span>
   </div>
 </div>
-<div id="cell-bcdba9c7" class="observablehq observablehq--block"></div>
+<div id="cell-06634e09" class="observablehq observablehq--block"></div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-56e84c08" class="observablehq--loading"></span>
+    <span id="cell-3339d464" class="observablehq--loading"></span>
   </div>
 </div>
 <div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <span id="cell-03560f54" class="observablehq--loading"></span>
+  <span id="cell-bd09fb10" class="observablehq--loading"></span>
 </div>
 </main>
 </div>
