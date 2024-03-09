@@ -132,7 +132,7 @@ export function BestSongsPlot(data, playlistChoosen, mostPopularArtists) {
             grid: true,
             width,
             height: height - 95,
-            title : `Best songs for ${mostPopularArtists} in ${playlistChoosen}`,
+            title : `Best songs of ${mostPopularArtists} in ${playlistChoosen}`,
             color: {
               legend: false,
             },

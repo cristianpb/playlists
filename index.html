@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
-<link rel="modulepreload" href="./_import/components/tools.js?sha=b5246177175a88ef23edf1e3851114bdc4abbd22af5b12f2439b74f32ff4c5dc">
+<link rel="modulepreload" href="./_import/components/tools.js?sha=a6cf6cc415e765985c3090725380e3f1d1ae34254e86bdcac134cbd0d404aa4f">
 <link rel="modulepreload" href="./_observablehq/client.js">
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
@@ -58,7 +58,7 @@
 import {define} from "./_observablehq/client.js";
 
 define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], files: [{"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.csv"},{"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.csv"},{"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.csv"}], body: async (FileAttachment) => {
-const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=b5246177175a88ef23edf1e3851114bdc4abbd22af5b12f2439b74f32ff4c5dc");
+const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=a6cf6cc415e765985c3090725380e3f1d1ae34254e86bdcac134cbd0d404aa4f");
 const latestSongs = await FileAttachment("data/latestArtists.csv").csv({typed: true})
 const diffData = await FileAttachment("data/playlistdiff.csv").csv().then(data => {
       return data.map(row => {
