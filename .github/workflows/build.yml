@@ -1,7 +1,11 @@
 ---
 name: Build html & Publish to github pages
 
-on: [push]
+on: 
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '0 6 * * 5'
+  push:
 
 env:
   python-version: "3.11"
