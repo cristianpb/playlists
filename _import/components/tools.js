@@ -1,4 +1,4 @@
-import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.13/+esm";
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.14/+esm";
 import {resize} from "../../_observablehq/stdlib.js";
 
 export const mostFrequent = arr => {
