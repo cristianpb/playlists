@@ -1,27 +1,109 @@
 name,artists,album_name,date,song_id,cover_url,playlist,position,commit_date
-LA LECHE MATERNA,El Alfa,LA LECHE MATERNA,2024-04-11,6HjooscdDxnbZ169Y47gAF,https://i.scdn.co/image/ab67616d0000b273724ca8caa943911ae93d3227,ThisIsElAlfa,2,2024-05-10
+Time Will Tell,Aaron Frazer,Time Will Tell,2024-05-07,6XhwSh89lYobx3M5LE8vHO,https://i.scdn.co/image/ab67616d0000b273c729252c75e6725ec4672c29,CafeCroissant,3,2024-05-17
+Cowboys Cry,Sasha Alex Sloan,Me Again,2024-05-17,5gohUfSll3LUYTXfZcd7yP,https://i.scdn.co/image/ab67616d0000b273ed5cdda7ad48becf7ed34315,CafeCroissant,4,2024-05-17
+The Wedding Song,Magon,The Wedding Song,2024-05-17,0UEmqhF4ae0ELXYjGkogDq,https://i.scdn.co/image/ab67616d0000b27324ca15849c6e15ec16a617b1,CafeCroissant,7,2024-05-17
+career day,Yaya Bey,Ten Fold,2024-05-10,6tRB5hUaJDStska9BvNxov,https://i.scdn.co/image/ab67616d0000b273560939bf8793438c417dd9a6,CafeCroissant,8,2024-05-17
+Songs In My Head,HONNE,Songs In My Head,2024-05-17,1r7Q77PuiuZwSJgVooeuiv,https://i.scdn.co/image/ab67616d0000b2730b7da6bb6d288b6a5fb59305,CafeCroissant,10,2024-05-17
+Insecure,Tom Misch,Insecure,2024-05-02,3tLVfEh8kJhMkDaxvOzK1M,https://i.scdn.co/image/ab67616d0000b273b6883e5145565b73701b0f7d,CafeCroissant,14,2024-05-17
+Gutter,Sarah Cothran,Gutter,2024-04-26,5MXEn2jPe9fZdSeasG69g4,https://i.scdn.co/image/ab67616d0000b273353af90ac07796903cbb06a1,CafeCroissant,16,2024-05-17
+No One Noticed,The Marías,If Only + No One Noticed,2024-05-03,40QmyP1PmvFYjs8CzYsXA7,https://i.scdn.co/image/ab67616d0000b273ba2d1aea3850a3de6ca06d8c,CafeCroissant,22,2024-05-17
+Bones Shake,Hazlett,Bones Shake,2024-04-19,2TX0eN7jdjQiGx7NHSax7l,https://i.scdn.co/image/ab67616d0000b273e51088f0dab9939ca351df58,CafeCroissant,27,2024-05-17
+I’m on a Roll,Kimberose,I'm on a Roll,2024-04-18,1y2OtZELxfZRSPXOwkhjHv,https://i.scdn.co/image/ab67616d0000b27396a969e4cc0197de3e3a4f7b,CafeCroissant,29,2024-05-17
+MIONCA,"Maluma, Pirlo",MIONCA,2024-05-14,3UxRvZWhEfSJmNDsbEjKOY,https://i.scdn.co/image/ab67616d0000b273486d217aeec34d7d74630fb2,ExitosColombia,4,2024-05-17
+GATITAS SANDUNGUERAS VOL.1,"Alvaro Diaz, Feid",SAYONARA,2024-05-17,6BpZpCM8d8FJnVnr1IbnFL,https://i.scdn.co/image/ab67616d0000b273af1e2e143561cf4df9941f5b,ExitosColombia,9,2024-05-17
+"Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,ExitosColombia,19,2024-05-17
+ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,ExitosColombia,23,2024-05-17
+PUEBLO DE MEDALLO,"Ryan Castro, Arcángel",EL CANTANTE DEL GHETTO,2024-05-10,1aA5nyIIkH8lmy8iMXy1ZQ,https://i.scdn.co/image/ab67616d0000b273dca8e6ba1b5d33d0e69b0cfc,ExitosColombia,24,2024-05-17
+SPIDER,"GIMS, DYSTINCT",SPIDER,2024-05-10,2fFTn0f94EopgZyfSGQuyK,https://i.scdn.co/image/ab67616d0000b27359dc8da873a4aa6c2d6888ff,FutursHits,1,2024-05-17
+Nous on sait,Pierre Garnier,Nous on sait,2024-05-17,2daxxajwTWuKX0LW2B9sgL,https://i.scdn.co/image/ab67616d0000b273a1c3c36966c3425fe1db1db6,FutursHits,2,2024-05-17
+Mélanine,"Heuss Lenfoiré, Werenoi",Mélanine,2024-05-03,7GCU3DlRW3s65f6JjNBrM4,https://i.scdn.co/image/ab67616d0000b273a9d80a3d6b5263a385109d8f,FutursHits,5,2024-05-17
+Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,FutursHits,6,2024-05-17
+Otra,Soolking,Otra,2024-05-02,0x9KqMgyO6SzBf4fLH9gsX,https://i.scdn.co/image/ab67616d0000b273a5ed8683411afe1e50cca742,FutursHits,15,2024-05-17
+Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,FutursHits,25,2024-05-17
+These Walls,Dua Lipa,Radical Optimism,2024-05-03,7b6sWLSnbZhSIeqNGrJ4py,https://i.scdn.co/image/ab67616d0000b273361debc2873b3aa493304b6d,FutursHits,27,2024-05-17
+Facile à danser,Soprano,Facile à danser,2024-05-03,2LCUvL8ZJ49z6uP1cGXSFi,https://i.scdn.co/image/ab67616d0000b27388b7fa92e71632312d3e0e94,FutursHits,28,2024-05-17
+MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b273ce31aff39a003828576d3930,TodayTopHits,1,2024-05-17
+LUNCH,Billie Eilish,HIT ME HARD AND SOFT,2024-05-17,629DixmZGHc7ILtEntuiWE,https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62,TodayTopHits,3,2024-05-17
+Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,8,2024-05-17
+I Had Some Help (Feat. Morgan Wallen),"Post Malone, Morgan Wallen",I Had Some Help,2024-05-10,7221xIgOnuakPdLqT0F3nP,https://i.scdn.co/image/ab67616d0000b27397306976e3eb8aad53b754eb,TodayTopHits,10,2024-05-17
+I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,12,2024-05-17
+Not Like Us,Kendrick Lamar,Not Like Us,2024-05-04,6AI3ezQ4o3HUoP6Dhudph3,https://i.scdn.co/image/ab67616d0000b2731ea0c62b2339cbf493a999ad,TodayTopHits,22,2024-05-17
+Go Back (feat. Julia Church),"John Summit, Sub Focus, Julia Church",Go Back (feat. Julia Church),2024-05-16,68R0zVUeMJ2C852Ov6d2Mh,https://i.scdn.co/image/ab67616d0000b2735addcee9b25cfd043a89ff7c,Mint,1,2024-05-17
+My City,"Tiësto, Prophecy",My City,2024-05-15,5sjvmFMLPjBXDd2XDr9JIm,https://i.scdn.co/image/ab67616d0000b273362d1d0b3c80665e295cce11,Mint,3,2024-05-17
+Chase It (Mmm Da Da Da),Bebe Rexha,Chase It (Mmm Da Da Da),2024-05-17,08APpCYHGsbJ2N9jhRgLQY,https://i.scdn.co/image/ab67616d0000b273b24069af64a886e1b2a2d3f2,Mint,4,2024-05-17
+For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,Mint,5,2024-05-17
+Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,Mint,7,2024-05-17
+On Again,Mau P,On Again,2024-04-30,5vASuVQkngtFoCOczem52V,https://i.scdn.co/image/ab67616d0000b27365196ad375037658c9b2637a,Mint,8,2024-05-17
+Last Night - Anyma x Layton Giordani Remix,"Loofy, Anyma, Layton Giordani",Last Night (Anyma x Layton Giordani Remix),2024-05-17,22hOKPKTAegLoLJKM33K4a,https://i.scdn.co/image/ab67616d0000b273a87250e8aff9558e9b6f1933,Mint,12,2024-05-17
+Summertime Blues (feat. Nathan Nicholson),"Chris Lake, Sammy Virji, Nathan Nicholson",Summertime Blues (feat. Nathan Nicholson),2024-04-26,6q36Cqt2d3O5jqrQR9uXCp,https://i.scdn.co/image/ab67616d0000b273f3b42c0ca1c479b251e1b393,Mint,13,2024-05-17
+How You Feel (Ft. Leven Kali),"ANOTR, Erik Bandt, Leven Kali",How You Feel (Ft. Leven Kali),2024-04-19,3Kwj07sN1wdzlRNMU8rNX0,https://i.scdn.co/image/ab67616d0000b273e6ef824871ae510415373427,Mint,14,2024-05-17
+Right Here,Becky Hill,Right Here,2024-05-01,2VpKBfkqAZr1iAwwg8AGDO,https://i.scdn.co/image/ab67616d0000b273cc2f4203fe1d7f64e79f6ba6,Mint,15,2024-05-17
+Honey Boy (feat. Nile Rodgers & Shenseea),"Purple Disco Machine, Benjamin Ingrosso, Nile Rodgers, Shenseea",Honey Boy (feat. Nile Rodgers & Shenseea),2024-05-03,1xIhiVVntsudPMTRFoODyo,https://i.scdn.co/image/ab67616d0000b273429dd14fe6bc49feee210b82,Mint,16,2024-05-17
+Throw Some Ass,Sofi Tukker,Throw Some Ass,2024-05-03,5YO44oPkpH4zeinnihUpIR,https://i.scdn.co/image/ab67616d0000b2737097d88ccc40d1945b27311d,Mint,17,2024-05-17
+Mountains,"Jonas Blue, Galantis, Zoe Wees",Mountains,2024-05-10,5JqTe36RFGJ1wdYBma0cZ7,https://i.scdn.co/image/ab67616d0000b2733ed77f4ccd5de8bb4bb17555,Mint,18,2024-05-17
+Ride Or Die,Aluna,Ride Or Die,2024-05-03,2CbuQYjqutizzJraX3ILZY,https://i.scdn.co/image/ab67616d0000b27347a8dd0924835ce10b0557ec,Mint,19,2024-05-17
+In My Bones,"Lost Frequencies, David Kushner",In My Bones,2024-04-19,1dcK8O2qEq7E34o4ImQEco,https://i.scdn.co/image/ab67616d0000b27336d804998bb567e07dfbaeaf,Mint,25,2024-05-17
+MAGIC (feat. babyidontlikeyou),"Gryffin, babyidontlikeyou",MAGIC,2024-04-24,7pTC4natqyNBB0EBtdDeYi,https://i.scdn.co/image/ab67616d0000b2735d01971ec90ce59944076366,Mint,26,2024-05-17
+TRAP2016,"Maluma, Darell",TRAP2016,2024-04-19,0MOZK0XOxP32RTW1QwVWht,https://i.scdn.co/image/ab67616d0000b273d26aded572aef066e57f1e75,ThisIsMaluma,1,2024-05-17
+POR QUÉ SERÁ,"Grupo Frontera, Maluma",JUGANDO A QUE NO PASA NADA,2024-05-10,7cXGHxIoogqDTvbuLj0dsO,https://i.scdn.co/image/ab67616d0000b273e1b4d9c94df25682dc469c48,ThisIsMaluma,24,2024-05-17
+POR QUÉ SERÁ,"Grupo Frontera, Maluma",JUGANDO A QUE NO PASA NADA,2024-05-10,7cXGHxIoogqDTvbuLj0dsO,https://i.scdn.co/image/ab67616d0000b273e1b4d9c94df25682dc469c48,MalumaRadio,18,2024-05-17
+I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,2024-04-19,2fPvQfGQEZOKtJ9qXeL4x8,https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa,Workout,13,2024-05-17
+Imagine,Carbonne,Imagine,2024-05-03,6IcsbETuviVu6UTiBTcxY4,https://i.scdn.co/image/ab67616d0000b273d4b27ea8a7fa9d9411fae079,GrandHit,8,2024-05-17
+Facile à danser,Soprano,Facile à danser,2024-05-03,2LCUvL8ZJ49z6uP1cGXSFi,https://i.scdn.co/image/ab67616d0000b27388b7fa92e71632312d3e0e94,GrandHit,17,2024-05-17
+Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,GrandHit,27,2024-05-17
+PUEBLO DE MEDALLO,"Ryan Castro, Arcángel",PUEBLO DE MEDALLO,2024-05-09,1l66Vx6g2i50WdeH6VU658,https://i.scdn.co/image/ab67616d0000b2737e8a331d38946e24647a3df7,VivaLatino,3,2024-05-17
+Ya Te Superé,"Xavi, Tony Aguirre",Ya Te Superé,2024-05-17,268nYrqkJyAd5HiAnXmUOF,https://i.scdn.co/image/ab67616d0000b2738594f99cee0b36aa26eaa9ba,VivaLatino,5,2024-05-17
+BADGYAL,"SAIKO, JC Reyes, Dei V",SAKURA,2024-04-26,3ng8tfwvzR4BBwa9yaMms6,https://i.scdn.co/image/ab67616d0000b273e346fc6f767ca2ac8365fe60,VivaLatino,6,2024-05-17
+ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,VivaLatino,7,2024-05-17
+Un Desperdicio,"Rels B, Junior H",Un Desperdicio,2024-04-25,4Pqi8W12YuzAWBvLdJI4ed,https://i.scdn.co/image/ab67616d0000b273a672cbd77e261ad0a90ef548,VivaLatino,12,2024-05-17
+GATITAS SANDUNGUERAS VOL.1,"Alvaro Diaz, Feid",SAYONARA,2024-05-17,6BpZpCM8d8FJnVnr1IbnFL,https://i.scdn.co/image/ab67616d0000b273af1e2e143561cf4df9941f5b,VivaLatino,14,2024-05-17
+Si no no,Danny Ocean,REFLEXA,2024-05-02,5v1gwuCHx5CcNN6NLrNWO9,https://i.scdn.co/image/ab67616d0000b2735313550303977c12f6db4b2f,VivaLatino,15,2024-05-17
+Que Se Cuide,"Luis R Conriquez, Joel De La P, Chimbala",Que Se Cuide,2024-05-04,22jhscHs2DoVqKG5vKJytQ,https://i.scdn.co/image/ab67616d0000b27375e22c457fc1f964f7dfd89d,VivaLatino,17,2024-05-17
+LA DURANGO,"Peso Pluma, Junior H, Eslabon Armado",LA DURANGO,2024-05-09,1uxiaf3DUS4vpOqNGu4MzL,https://i.scdn.co/image/ab67616d0000b273d8eedd3e32682857322c06d4,VivaLatino,22,2024-05-17
+IMAN (Two Of Us),Maria Becerra,IMAN (Two Of Us),2024-05-16,3sra6aEWWDXUiy46fWQobH,https://i.scdn.co/image/ab67616d0000b273d5e5c90215385815a0e23af8,VivaLatino,23,2024-05-17
+"Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,VivaLatino,28,2024-05-17
+POR QUÉ SERÁ,"Grupo Frontera, Maluma",JUGANDO A QUE NO PASA NADA,2024-05-10,7cXGHxIoogqDTvbuLj0dsO,https://i.scdn.co/image/ab67616d0000b273e1b4d9c94df25682dc469c48,VivaLatino,29,2024-05-17
+Metaverse,Cage The Elephant,Neon Pill,2024-05-17,49ukvVBtVT9Y575F6VY33G,https://i.scdn.co/image/ab67616d0000b273a0bfa72a931c6046b6c42c8a,RockThis,1,2024-05-17
+Take A Bite,beabadoobee,Take A Bite,2024-05-09,7ddVpLW467CLYffbPRQNmH,https://i.scdn.co/image/ab67616d0000b2731a022362df1d720a646c6391,RockThis,5,2024-05-17
+Boom Boom Back,"Hinds, Beck",Boom Boom Back,2024-05-07,6XGKwGyC5z1UmhhyOhwSYv,https://i.scdn.co/image/ab67616d0000b27336aa4747776cf8051576a924,RockThis,6,2024-05-17
+Nowhere To Run,Kings of Leon,Can We Please Have Fun,2024-05-10,44R1ZALac20AijYr5TtPgr,https://i.scdn.co/image/ab67616d0000b27390999e6cc0765eaeb143bf15,RockThis,8,2024-05-17
+Karma Police,Pierce The Veil,Karma Police,2024-04-19,2GBeNjgz5HSvBkE7dRryxk,https://i.scdn.co/image/ab67616d0000b2736a0baadb25a407525671c3e1,RockThis,11,2024-05-17
+Just My Type,Palaye Royale,Just My Type,2024-05-07,3U2fxzzmfG6IubKrvXbWr8,https://i.scdn.co/image/ab67616d0000b273535b8bee859cfd406c8d5497,RockThis,16,2024-05-17
+STRAY,jxdn,STRAY / SAD OCTOBER,2024-04-26,7MCtZJoabikk4AVQp8o6rP,https://i.scdn.co/image/ab67616d0000b273a8b12ada3e98945ea3dc990a,RockThis,18,2024-05-17
+SPINE,WesGhost,SPINE,2024-04-19,6Stz1dIY7OD61gU7SdVR22,https://i.scdn.co/image/ab67616d0000b2739726df93a0bcb621bd59b9ac,RockThis,22,2024-05-17
+Won't Settle,BONES UK,Won't Settle,2024-04-23,56hGTwfJp5UKGxj92qSnyX,https://i.scdn.co/image/ab67616d0000b2735aabae5ab5d5cc63c4a4069d,RockThis,24,2024-05-17
+Over It,Cassyette,Over It,2024-05-10,0eArfQGTTeqPmBuj1Z58cv,https://i.scdn.co/image/ab67616d0000b2739c14c09926ef4df7462af4ae,RockThis,26,2024-05-17
+Broken Man,St. Vincent,All Born Screaming,2024-04-26,1kgLXgHrXecZyRCDROfAPb,https://i.scdn.co/image/ab67616d0000b273902e9fffc3787dd4fe7678e7,RockThis,28,2024-05-17
+Backslide,Twenty One Pilots,Backslide,2024-04-25,62aSL7D64td5wr09L6iFiV,https://i.scdn.co/image/ab67616d0000b27330916659fbed40ead093a7c9,ItsAllGood,10,2024-05-17
+misses,Dominic Fike,14 minutes,2024-05-03,6WTFHKrnZpwEBLRS10Ylqs,https://i.scdn.co/image/ab67616d0000b273abdde781e79a44868914e661,ItsAllGood,14,2024-05-17
+LUNCH,Billie Eilish,HIT ME HARD AND SOFT,2024-05-17,629DixmZGHc7ILtEntuiWE,https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62,JustHits,3,2024-05-17
+Chase It (Mmm Da Da Da),Bebe Rexha,Chase It (Mmm Da Da Da),2024-05-17,08APpCYHGsbJ2N9jhRgLQY,https://i.scdn.co/image/ab67616d0000b273b24069af64a886e1b2a2d3f2,JustHits,5,2024-05-17
+Fire - Official UEFA EURO 2024 Song,"MEDUZA, OneRepublic, Leony",Fire (Official UEFA EURO 2024 Song),2024-05-10,7MYLHLCf0YWR4TVs3owDny,https://i.scdn.co/image/ab67616d0000b273eff21577ce7a071868092b2b,JustHits,6,2024-05-17
+For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,JustHits,8,2024-05-17
+Easy,Jess Glynne,JESS,2024-04-26,2irLZwJgLkQZRdXnUoILhq,https://i.scdn.co/image/ab67616d0000b273d8ffb5a1b867d980d895d95f,JustHits,10,2024-05-17
+I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,JustHits,14,2024-05-17
+Friday,"The Chainsmokers, Fridayy",Friday,2024-04-26,03bOA3BAjZiqJOGyFmWYFz,https://i.scdn.co/image/ab67616d0000b273fa32e83a0fa02c8c0eaeedd0,JustHits,18,2024-05-17
+"Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,JustHits,22,2024-05-17
+Go Back (feat. Julia Church),"John Summit, Sub Focus, Julia Church",Go Back (feat. Julia Church),2024-05-16,68R0zVUeMJ2C852Ov6d2Mh,https://i.scdn.co/image/ab67616d0000b2735addcee9b25cfd043a89ff7c,JustHits,28,2024-05-17
+TONIGHT (Bad Boys: Ride Or Die) (feat. Becky G),"Black Eyed Peas, El Alfa, Becky G",TONIGHT (Bad Boys: Ride Or Die) (feat. Becky G),2024-05-10,237t7ZswmEnZChpNZ0zscx,https://i.scdn.co/image/ab67616d0000b2733462de5f1f8d920fc5e5c9ae,ThisIsElAlfa,22,2024-05-17
+MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b273ce31aff39a003828576d3930,BigOnTheInternet,1,2024-05-17
+Stargazing,Myles Smith,Stargazing,2024-05-10,3Vr3zh0r7ALn8VLqCiRR10,https://i.scdn.co/image/ab67616d0000b27381b12e1a0584e8ea7ba2ae4a,BigOnTheInternet,10,2024-05-17
+"Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,BigOnTheInternet,13,2024-05-17
 Imagine,Carbonne,Imagine,2024-05-03,6IcsbETuviVu6UTiBTcxY4,https://i.scdn.co/image/ab67616d0000b273d4b27ea8a7fa9d9411fae079,FutursHits,1,2024-05-10
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,FutursHits,4,2024-05-10
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,FutursHits,7,2024-05-10
 Facile à danser,Soprano,Facile à danser,2024-05-03,2LCUvL8ZJ49z6uP1cGXSFi,https://i.scdn.co/image/ab67616d0000b27388b7fa92e71632312d3e0e94,FutursHits,8,2024-05-10
 Boucan (feat. Franglish),"KeBlack, Franglish",Boucan (feat. Franglish),2024-04-25,6jElwivDtkQUv9QFGrdN26,https://i.scdn.co/image/ab67616d0000b27378ed0170fe04ce8369809eb3,FutursHits,9,2024-05-10
-I Forgive You,Sia,I Forgive You,2024-04-12,5ytXEc1V6ZdSpFNsg81X8O,https://i.scdn.co/image/ab67616d0000b273e5c35fbeca0cc5a86ee86b3b,FutursHits,10,2024-05-10
 Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,FutursHits,13,2024-05-10
 Sommet,Amir,Sommet,2024-05-03,471PmO82n752rs6DpZQ2fk,https://i.scdn.co/image/ab67616d0000b2731ffcbd43e72991ea9dca8a2c,FutursHits,14,2024-05-10
-Nobody - from Kaiju No. 8,OneRepublic,Nobody (from Kaiju No. 8),2024-04-12,47N81NMkB488fuOwOC3Oip,https://i.scdn.co/image/ab67616d0000b2732b386fcbb5a5e90bba728f95,FutursHits,15,2024-05-10
 These Walls,Dua Lipa,Radical Optimism,2024-05-03,7b6sWLSnbZhSIeqNGrJ4py,https://i.scdn.co/image/ab67616d0000b273361debc2873b3aa493304b6d,FutursHits,17,2024-05-10
 Mélanine,"Heuss Lenfoiré, Werenoi",Mélanine,2024-05-03,7GCU3DlRW3s65f6JjNBrM4,https://i.scdn.co/image/ab67616d0000b273a9d80a3d6b5263a385109d8f,FutursHits,26,2024-05-10
 Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,FutursHits,28,2024-05-10
-Comment tu vas ?,"Eloïz, RIDSA",Comment tu vas ?,2024-04-12,0pE2J5ZvVckFsTQGqZZDdt,https://i.scdn.co/image/ab67616d0000b2732d423c57875d15001739804a,HitRadioFr,18,2024-05-10
 LA DURANGO,"Peso Pluma, Junior H, Eslabon Armado",LA DURANGO,2024-05-09,1uxiaf3DUS4vpOqNGu4MzL,https://i.scdn.co/image/ab67616d0000b273d8eedd3e32682857322c06d4,VivaLatino,2,2024-05-10
 ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,VivaLatino,3,2024-05-10
-LA NENA,"Lyanno, Rauw Alejandro",LA NENA,2024-04-11,1XV28AhakcpzWGBmU2j2Ld,https://i.scdn.co/image/ab67616d0000b2739b6ba2e8aff0caf9147195e0,VivaLatino,6,2024-05-10
 Si no no,Danny Ocean,REFLEXA,2024-05-02,5v1gwuCHx5CcNN6NLrNWO9,https://i.scdn.co/image/ab67616d0000b2735313550303977c12f6db4b2f,VivaLatino,7,2024-05-10
 Un Desperdicio,"Rels B, Junior H",Un Desperdicio,2024-04-25,4Pqi8W12YuzAWBvLdJI4ed,https://i.scdn.co/image/ab67616d0000b273a672cbd77e261ad0a90ef548,VivaLatino,10,2024-05-10
 PUEBLO DE MEDALLO,"Ryan Castro, Arcángel",PUEBLO DE MEDALLO,2024-05-09,1l66Vx6g2i50WdeH6VU658,https://i.scdn.co/image/ab67616d0000b2737e8a331d38946e24647a3df7,VivaLatino,11,2024-05-10
 BADGYAL,"SAIKO, JC Reyes, Dei V",SAKURA,2024-04-26,3ng8tfwvzR4BBwa9yaMms6,https://i.scdn.co/image/ab67616d0000b273e346fc6f767ca2ac8365fe60,VivaLatino,12,2024-05-10
 Brinca - Spotify Singles,"Yeri Mua, El Bogueto, Uzielito Mix",Brinca - Spotify Singles,2024-05-08,1TPtornOIqa4PprEZp9LLB,https://i.scdn.co/image/ab67616d0000b273995a84c17b4e7aec82578cef,VivaLatino,17,2024-05-10
-Enrolar - Fantastic Four Remix,"Kidd Voodoo, DrefQuila, Young Cister, Easykid, Swift 047",Enrolar (Fantastic Four Remix),2024-04-11,4Br7zuCL1Jetik8COatafL,https://i.scdn.co/image/ab67616d0000b27341899b48bc7563cfa753f6bb,VivaLatino,20,2024-05-10
 Que Se Cuide,"Luis R Conriquez, Joel De La P, Chimbala",Que Se Cuide,2024-05-04,22jhscHs2DoVqKG5vKJytQ,https://i.scdn.co/image/ab67616d0000b27375e22c457fc1f964f7dfd89d,VivaLatino,22,2024-05-10
 CARBON VRMOR,"Farruko, Sharo Towers",CVRBON VRMOR [C_DE: G_D.O.N.],2024-05-02,5pQed9UAd4DqG6cWUQegGm,https://i.scdn.co/image/ab67616d0000b273ea609feffbb005dd9e5830dd,VivaLatino,24,2024-05-10
 LOVEO,Daddy Yankee,LOVEO,2024-05-03,0rBVM75Fqi5U6rCm2m5iTK,https://i.scdn.co/image/ab67616d0000b2732106d57ad70a4352d218a51f,VivaLatino,25,2024-05-10
@@ -29,8 +111,6 @@ LOVEO,Daddy Yankee,LOVEO,2024-05-03,0rBVM75Fqi5U6rCm2m5iTK,https://i.scdn.co/ima
 300 Noches,"Belinda, Natanael Cano",300 Noches,2024-04-25,0163eXbLwh5dFhKa73n9wG,https://i.scdn.co/image/ab67616d0000b2734c330c8d739522364f1e67cd,VivaLatino,28,2024-05-10
 Facile à danser,Soprano,Facile à danser,2024-05-03,2LCUvL8ZJ49z6uP1cGXSFi,https://i.scdn.co/image/ab67616d0000b27388b7fa92e71632312d3e0e94,GrandHit,15,2024-05-10
 Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,GrandHit,24,2024-05-10
-Comment tu vas ?,"Eloïz, RIDSA",Comment tu vas ?,2024-04-12,0pE2J5ZvVckFsTQGqZZDdt,https://i.scdn.co/image/ab67616d0000b2732d423c57875d15001739804a,GrandHit,27,2024-05-10
-Starburster,Fontaines D.C.,Starburster,2024-04-17,1cg4xD453Wuol9fNsRDbsV,https://i.scdn.co/image/ab67616d0000b2730aa950a429f1a159fa211a75,RockThis,1,2024-05-10
 Mustang,Kings of Leon,Can We Please Have Fun,2024-05-10,0bfY2rrQgn4HqiwftGNP36,https://i.scdn.co/image/ab67616d0000b27390999e6cc0765eaeb143bf15,RockThis,2,2024-05-10
 Metaverse,Cage The Elephant,Metaverse,2024-05-03,56awJyqhhuQW0p0bu1yTCo,https://i.scdn.co/image/ab67616d0000b273dd94402318778977e9ebefa1,RockThis,4,2024-05-10
 Karma Police,Pierce The Veil,Karma Police,2024-04-19,2GBeNjgz5HSvBkE7dRryxk,https://i.scdn.co/image/ab67616d0000b2736a0baadb25a407525671c3e1,RockThis,5,2024-05-10
@@ -40,15 +120,10 @@ STRAY,jxdn,STRAY / SAD OCTOBER,2024-04-26,7MCtZJoabikk4AVQp8o6rP,https://i.scdn.
 Broken Man,St. Vincent,All Born Screaming,2024-04-26,1kgLXgHrXecZyRCDROfAPb,https://i.scdn.co/image/ab67616d0000b273902e9fffc3787dd4fe7678e7,RockThis,22,2024-05-10
 Backslide,Twenty One Pilots,Backslide,2024-04-25,62aSL7D64td5wr09L6iFiV,https://i.scdn.co/image/ab67616d0000b27330916659fbed40ead093a7c9,ItsAllGood,11,2024-05-10
 misses,Dominic Fike,14 minutes,2024-05-03,6WTFHKrnZpwEBLRS10Ylqs,https://i.scdn.co/image/ab67616d0000b273abdde781e79a44868914e661,ItsAllGood,19,2024-05-10
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,Workout,6,2024-05-10
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,2024-04-19,2fPvQfGQEZOKtJ9qXeL4x8,https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa,Workout,10,2024-05-10
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,Workout,26,2024-05-10
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,TodayTopHits,1,2024-05-10
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,TodayTopHits,2,2024-05-10
 Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,3,2024-05-10
 MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b273ce31aff39a003828576d3930,TodayTopHits,9,2024-05-10
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,13,2024-05-10
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,TodayTopHits,17,2024-05-10
 Not Like Us,Kendrick Lamar,Not Like Us,2024-05-04,6AI3ezQ4o3HUoP6Dhudph3,https://i.scdn.co/image/ab67616d0000b2731ea0c62b2339cbf493a999ad,TodayTopHits,21,2024-05-10
 I Had Some Help (Feat. Morgan Wallen),"Post Malone, Morgan Wallen",I Had Some Help,2024-05-10,7221xIgOnuakPdLqT0F3nP,https://i.scdn.co/image/ab67616d0000b27397306976e3eb8aad53b754eb,TodayTopHits,24,2024-05-10
 Friday,"The Chainsmokers, Fridayy",Friday,2024-04-26,03bOA3BAjZiqJOGyFmWYFz,https://i.scdn.co/image/ab67616d0000b273fa32e83a0fa02c8c0eaeedd0,JustHits,1,2024-05-10
@@ -56,36 +131,22 @@ I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,JustHits,7,2024-05-10
 Fire - Official UEFA EURO 2024 Song,"MEDUZA, OneRepublic, Leony",Fire (Official UEFA EURO 2024 Song),2024-05-10,7MYLHLCf0YWR4TVs3owDny,https://i.scdn.co/image/ab67616d0000b273eff21577ce7a071868092b2b,JustHits,8,2024-05-10
 Easy,Jess Glynne,JESS,2024-04-26,2irLZwJgLkQZRdXnUoILhq,https://i.scdn.co/image/ab67616d0000b273d8ffb5a1b867d980d895d95f,JustHits,10,2024-05-10
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,JustHits,13,2024-05-10
-Mistake,Mimi Webb,Mistake,2024-04-12,1WLpHzABY3TFLkOQoU4bDW,https://i.scdn.co/image/ab67616d0000b273d97ab204c85c9a1d21361f43,JustHits,15,2024-05-10
-Forget About Us,Perrie,Forget About Us,2024-04-12,3wmnP7CY38ajyGfZUZ6vce,https://i.scdn.co/image/ab67616d0000b27301385b29ad2e8fe752231abd,JustHits,22,2024-05-10
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,JustHits,23,2024-05-10
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,JustHits,27,2024-05-10
 TRAP2016,"Maluma, Darell",TRAP2016,2024-04-19,0MOZK0XOxP32RTW1QwVWht,https://i.scdn.co/image/ab67616d0000b273d26aded572aef066e57f1e75,ThisIsMaluma,2,2024-05-10
 MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b273ce31aff39a003828576d3930,BigOnTheInternet,1,2024-05-10
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,BigOnTheInternet,13,2024-05-10
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,BigOnTheInternet,18,2024-05-10
-Karma's A Bitch,Brit Smith,Karma's A Bitch,2024-04-14,3LwEb2gndSporUInoVxUFB,https://i.scdn.co/image/ab67616d0000b273bbe34f4a6b9ecb723c0f7f44,BigOnTheInternet,20,2024-05-10
-BREAK A NECK (w/ Ayesha Erotica),"Odetari, Ayesha Erotica",BREAK A NECK (w/ Ayesha Erotica),2024-04-17,0hmd7it20lGXWfNPOUcYUp,https://i.scdn.co/image/ab67616d0000b273604a3f21b0538de84c9c726a,BigOnTheInternet,23,2024-05-10
-kompa pasión,фрози,kompa pasión,2024-04-12,1EwIdgeVfiXTIDfFHpgqfI,https://i.scdn.co/image/ab67616d0000b273c5a22b35a6476f782bd44eab,BigOnTheInternet,25,2024-05-10
-Danza Kuduro - Tiësto Remix,"Don Omar, Lucenzo, Tiësto",Danza Kuduro (Tiësto Remix),2024-04-12,7mdDd1a4TtNGqDW1lXc14o,https://i.scdn.co/image/ab67616d0000b27317a762165593b12a0aba41e9,GardeLaPeche,29,2024-05-10
-Mirame,"Blessd, Ovy On The Drums",Mirame,2024-04-17,2btNsI4OvcVl7SAHQQDHFB,https://i.scdn.co/image/ab67616d0000b273b62a2ec2d61d48f34a368144,ExitosColombia,10,2024-05-10
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,ExitosColombia,15,2024-05-10
 ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,ExitosColombia,22,2024-05-10
 Gutter,Sarah Cothran,Gutter,2024-04-26,5MXEn2jPe9fZdSeasG69g4,https://i.scdn.co/image/ab67616d0000b273353af90ac07796903cbb06a1,CafeCroissant,2,2024-05-10
 Insecure,Tom Misch,Insecure,2024-05-02,3tLVfEh8kJhMkDaxvOzK1M,https://i.scdn.co/image/ab67616d0000b27399645cb2697714ce4ac55a90,CafeCroissant,7,2024-05-10
 No One Noticed,The Marías,If Only + No One Noticed,2024-05-03,40QmyP1PmvFYjs8CzYsXA7,https://i.scdn.co/image/ab67616d0000b273ba2d1aea3850a3de6ca06d8c,CafeCroissant,12,2024-05-10
-Caroline,"Baby Rose, BADBADNOTGOOD, Mereba",Slow Burn,2024-04-12,5SqHQPdRnsypIJEJNTspWE,https://i.scdn.co/image/ab67616d0000b273133bfea3a205d035cee306ad,CafeCroissant,15,2024-05-10
-The Sun of the Island,"Peter von Poehl, Marie Modiano",The Sun of the Island,2024-04-17,2FniJxOBwfJdOiTRaW9icP,https://i.scdn.co/image/ab67616d0000b273fa50143e1790d93361244046,CafeCroissant,21,2024-05-10
 Bones Shake,Hazlett,Bones Shake,2024-04-19,2TX0eN7jdjQiGx7NHSax7l,https://i.scdn.co/image/ab67616d0000b273e51088f0dab9939ca351df58,CafeCroissant,22,2024-05-10
 I’m on a Roll,Kimberose,I'm on a Roll,2024-04-18,1y2OtZELxfZRSPXOwkhjHv,https://i.scdn.co/image/ab67616d0000b27396a969e4cc0197de3e3a4f7b,CafeCroissant,27,2024-05-10
 En Esta Boca,"Kany García, Young Miko",GARCÍA,2024-05-02,18nR6OK2Kj0CxRcaWbpOF6,https://i.scdn.co/image/ab67616d0000b2737180f28c3a5b8991497d33c4,CamiloRadio,29,2024-05-10
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,Mint,1,2024-05-10
 Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,Mint,3,2024-05-10
 How You Feel (Ft. Leven Kali),"ANOTR, Erik Bandt, Leven Kali",How You Feel (Ft. Leven Kali),2024-04-19,3Kwj07sN1wdzlRNMU8rNX0,https://i.scdn.co/image/ab67616d0000b273e6ef824871ae510415373427,Mint,5,2024-05-10
-Baddy On The Floor,"Jamie xx, Honey Dijon",Baddy On The Floor,2024-04-15,3CqaTHbiU2nBy3Ar9RnDHN,https://i.scdn.co/image/ab67616d0000b27372441424fe34dde8e76f8daa,Mint,6,2024-05-10
 On Again,Mau P,On Again,2024-04-30,5vASuVQkngtFoCOczem52V,https://i.scdn.co/image/ab67616d0000b27365196ad375037658c9b2637a,Mint,7,2024-05-10
-Roar,Charlotte de Witte,Roar,2024-04-11,1FubT3w22RMHC3vreAL7cH,https://i.scdn.co/image/ab67616d0000b2739fae5caa6d6bf5e3da412047,Mint,8,2024-05-10
 Right Here,Becky Hill,Right Here,2024-05-01,2VpKBfkqAZr1iAwwg8AGDO,https://i.scdn.co/image/ab67616d0000b273cc2f4203fe1d7f64e79f6ba6,Mint,9,2024-05-10
 Summertime Blues (feat. Nathan Nicholson),"Chris Lake, Sammy Virji, Nathan Nicholson",Summertime Blues (feat. Nathan Nicholson),2024-04-26,6q36Cqt2d3O5jqrQR9uXCp,https://i.scdn.co/image/ab67616d0000b273f3b42c0ca1c479b251e1b393,Mint,11,2024-05-10
 Throw Some Ass,Sofi Tukker,Throw Some Ass,2024-05-03,5YO44oPkpH4zeinnihUpIR,https://i.scdn.co/image/ab67616d0000b2737097d88ccc40d1945b27311d,Mint,14,2024-05-10
@@ -94,71 +155,45 @@ Ride Or Die,Aluna,Ride Or Die,2024-05-03,2CbuQYjqutizzJraX3ILZY,https://i.scdn.c
 In My Bones,"Lost Frequencies, David Kushner",In My Bones,2024-04-19,1dcK8O2qEq7E34o4ImQEco,https://i.scdn.co/image/ab67616d0000b27336d804998bb567e07dfbaeaf,Mint,19,2024-05-10
 MAGIC (feat. babyidontlikeyou),"Gryffin, babyidontlikeyou",MAGIC,2024-04-24,7pTC4natqyNBB0EBtdDeYi,https://i.scdn.co/image/ab67616d0000b2735d01971ec90ce59944076366,Mint,24,2024-05-10
 Kimbara,Barry Cant Swim,Kimbara,2024-04-30,3iHrGCUXfZ4BoOy615Ydbk,https://i.scdn.co/image/ab67616d0000b2730ade2366138036037a83b1d6,Mint,29,2024-05-10
-LA LECHE MATERNA,El Alfa,LA LECHE MATERNA,2024-04-11,6HjooscdDxnbZ169Y47gAF,https://i.scdn.co/image/ab67616d0000b273724ca8caa943911ae93d3227,ThisIsElAlfa,2,2024-05-03
 Boucan (feat. Franglish),"KeBlack, Franglish",Boucan (feat. Franglish),2024-04-25,6jElwivDtkQUv9QFGrdN26,https://i.scdn.co/image/ab67616d0000b27378ed0170fe04ce8369809eb3,FutursHits,1,2024-05-03
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,FutursHits,3,2024-05-03
-I Forgive You,Sia,I Forgive You,2024-04-12,5ytXEc1V6ZdSpFNsg81X8O,https://i.scdn.co/image/ab67616d0000b273e5c35fbeca0cc5a86ee86b3b,FutursHits,4,2024-05-03
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,FutursHits,5,2024-05-03
-Nobody - from Kaiju No. 8,OneRepublic,Nobody (from Kaiju No. 8),2024-04-12,47N81NMkB488fuOwOC3Oip,https://i.scdn.co/image/ab67616d0000b2732b386fcbb5a5e90bba728f95,FutursHits,10,2024-05-03
 Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,FutursHits,11,2024-05-03
 Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,FutursHits,23,2024-05-03
 ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,VivaLatino,3,2024-05-03
 Si no no,Danny Ocean,REFLEXA,2024-05-02,5v1gwuCHx5CcNN6NLrNWO9,https://i.scdn.co/image/ab67616d0000b2735313550303977c12f6db4b2f,VivaLatino,4,2024-05-03
-LA NENA,"Lyanno, Rauw Alejandro",LA NENA,2024-04-11,1XV28AhakcpzWGBmU2j2Ld,https://i.scdn.co/image/ab67616d0000b2739b6ba2e8aff0caf9147195e0,VivaLatino,5,2024-05-03
 Un Desperdicio,"Rels B, Junior H",Un Desperdicio,2024-04-25,4Pqi8W12YuzAWBvLdJI4ed,https://i.scdn.co/image/ab67616d0000b273a672cbd77e261ad0a90ef548,VivaLatino,10,2024-05-03
 CARBON VRMOR,"Farruko, Sharo Towers",CVRBON VRMOR [C_DE: G_D.O.N.],2024-05-02,5pQed9UAd4DqG6cWUQegGm,https://i.scdn.co/image/ab67616d0000b273ea609feffbb005dd9e5830dd,VivaLatino,15,2024-05-03
-Enrolar - Fantastic Four Remix,"Kidd Voodoo, DrefQuila, Young Cister, Easykid, Swift 047",Enrolar (Fantastic Four Remix),2024-04-11,4Br7zuCL1Jetik8COatafL,https://i.scdn.co/image/ab67616d0000b27341899b48bc7563cfa753f6bb,VivaLatino,16,2024-05-03
 LOVEO,Daddy Yankee,LOVEO,2024-05-03,0rBVM75Fqi5U6rCm2m5iTK,https://i.scdn.co/image/ab67616d0000b2732106d57ad70a4352d218a51f,VivaLatino,20,2024-05-03
 300 Noches,"Belinda, Natanael Cano",300 Noches,2024-04-25,0163eXbLwh5dFhKa73n9wG,https://i.scdn.co/image/ab67616d0000b2734c330c8d739522364f1e67cd,VivaLatino,21,2024-05-03
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,VivaLatino,24,2024-05-03
 BADGYAL,"SAIKO, JC Reyes",SAKURA,2024-04-26,3ng8tfwvzR4BBwa9yaMms6,https://i.scdn.co/image/ab67616d0000b273e346fc6f767ca2ac8365fe60,VivaLatino,28,2024-05-03
-Comment tu vas ?,"Eloïz, RIDSA",Comment tu vas ?,2024-04-12,0pE2J5ZvVckFsTQGqZZDdt,https://i.scdn.co/image/ab67616d0000b2732d423c57875d15001739804a,GrandHit,22,2024-05-03
 Adieu,Jérémy Frerot,Adieu,2024-04-22,1gDD9giByuHtgkprzQqUXN,https://i.scdn.co/image/ab67616d0000b27364f57040487cc49727411503,GrandHit,25,2024-05-03
-Starburster,Fontaines D.C.,Starburster,2024-04-17,1cg4xD453Wuol9fNsRDbsV,https://i.scdn.co/image/ab67616d0000b2730aa950a429f1a159fa211a75,RockThis,4,2024-05-03
 Broken Man,St. Vincent,All Born Screaming,2024-04-26,1kgLXgHrXecZyRCDROfAPb,https://i.scdn.co/image/ab67616d0000b273902e9fffc3787dd4fe7678e7,RockThis,8,2024-05-03
 Nothing To Do,Kings of Leon,Nothing To Do,2024-04-19,2Eza3ko1jcN2xkm6BkeUM4,https://i.scdn.co/image/ab67616d0000b2738c61853889028b5055be56d1,RockThis,10,2024-05-03
 Karma Police,Pierce The Veil,Karma Police,2024-04-19,2GBeNjgz5HSvBkE7dRryxk,https://i.scdn.co/image/ab67616d0000b2736a0baadb25a407525671c3e1,RockThis,12,2024-05-03
 SPINE,WesGhost,SPINE,2024-04-19,6Stz1dIY7OD61gU7SdVR22,https://i.scdn.co/image/ab67616d0000b2739726df93a0bcb621bd59b9ac,RockThis,15,2024-05-03
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,Workout,1,2024-05-03
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,2024-04-19,2fPvQfGQEZOKtJ9qXeL4x8,https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa,Workout,13,2024-05-03
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,Workout,27,2024-05-03
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,TodayTopHits,1,2024-05-03
 Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,4,2024-05-03
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,TodayTopHits,7,2024-05-03
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,13,2024-05-03
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,TodayTopHits,14,2024-05-03
 MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b2739351aad679d6cb885a02510e,TodayTopHits,24,2024-05-03
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,JustHits,1,2024-05-03
 Friday,"The Chainsmokers, Fridayy",Friday,2024-04-26,03bOA3BAjZiqJOGyFmWYFz,https://i.scdn.co/image/ab67616d0000b273fa32e83a0fa02c8c0eaeedd0,JustHits,3,2024-05-03
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,JustHits,4,2024-05-03
 Easy,Jess Glynne,JESS,2024-04-26,2irLZwJgLkQZRdXnUoILhq,https://i.scdn.co/image/ab67616d0000b273d8ffb5a1b867d980d895d95f,JustHits,8,2024-05-03
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,JustHits,11,2024-05-03
-Mistake,Mimi Webb,Mistake,2024-04-12,1WLpHzABY3TFLkOQoU4bDW,https://i.scdn.co/image/ab67616d0000b273d97ab204c85c9a1d21361f43,JustHits,13,2024-05-03
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,JustHits,21,2024-05-03
-Forget About Us,Perrie,Forget About Us,2024-04-12,3wmnP7CY38ajyGfZUZ6vce,https://i.scdn.co/image/ab67616d0000b27301385b29ad2e8fe752231abd,JustHits,23,2024-05-03
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,JustHits,28,2024-05-03
 TRAP2016,"Maluma, Darell",TRAP2016,2024-04-19,0MOZK0XOxP32RTW1QwVWht,https://i.scdn.co/image/ab67616d0000b273d26aded572aef066e57f1e75,ThisIsMaluma,2,2024-05-03
 MILLION DOLLAR BABY,Tommy Richman,MILLION DOLLAR BABY,2024-04-26,7fzHQizxTqy8wTXwlrgPQQ,https://i.scdn.co/image/ab67616d0000b2739351aad679d6cb885a02510e,BigOnTheInternet,3,2024-05-03
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,BigOnTheInternet,7,2024-05-03
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,BigOnTheInternet,13,2024-05-03
-Karma's A Bitch,Brit Smith,Karma's A Bitch,2024-04-14,3LwEb2gndSporUInoVxUFB,https://i.scdn.co/image/ab67616d0000b273bbe34f4a6b9ecb723c0f7f44,BigOnTheInternet,14,2024-05-03
-BREAK A NECK (w/ Ayesha Erotica),"Odetari, Ayesha Erotica",BREAK A NECK (w/ Ayesha Erotica),2024-04-17,0hmd7it20lGXWfNPOUcYUp,https://i.scdn.co/image/ab67616d0000b273604a3f21b0538de84c9c726a,BigOnTheInternet,16,2024-05-03
-Mirame,"Blessd, Ovy On The Drums",Mirame,2024-04-17,2btNsI4OvcVl7SAHQQDHFB,https://i.scdn.co/image/ab67616d0000b273b62a2ec2d61d48f34a368144,ExitosColombia,1,2024-05-03
 ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,ExitosColombia,10,2024-05-03
 La Vida Sin Ti,"Rels B, Lia Kali",a new star (1 9 9 3),2024-04-26,1O1VvCshhDw3XIOOcfLziL,https://i.scdn.co/image/ab67616d0000b2736a78a042e38096089d60841a,ExitosColombia,17,2024-05-03
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,ExitosColombia,22,2024-05-03
 Gutter,Sarah Cothran,Gutter,2024-04-26,5MXEn2jPe9fZdSeasG69g4,https://i.scdn.co/image/ab67616d0000b273353af90ac07796903cbb06a1,CafeCroissant,3,2024-05-03
 Insecure,Tom Misch,Insecure,2024-05-02,3tLVfEh8kJhMkDaxvOzK1M,https://i.scdn.co/image/ab67616d0000b27399645cb2697714ce4ac55a90,CafeCroissant,5,2024-05-03
 No One Noticed,The Marías,If Only + No One Noticed,2024-05-03,40QmyP1PmvFYjs8CzYsXA7,https://i.scdn.co/image/ab67616d0000b273ba2d1aea3850a3de6ca06d8c,CafeCroissant,14,2024-05-03
-Caroline,"Baby Rose, BADBADNOTGOOD, Mereba",Slow Burn,2024-04-12,5SqHQPdRnsypIJEJNTspWE,https://i.scdn.co/image/ab67616d0000b273133bfea3a205d035cee306ad,CafeCroissant,15,2024-05-03
 Bones Shake,Hazlett,Bones Shake,2024-04-19,2TX0eN7jdjQiGx7NHSax7l,https://i.scdn.co/image/ab67616d0000b273e51088f0dab9939ca351df58,CafeCroissant,22,2024-05-03
-The Sun of the Island,"Peter von Poehl, Marie Modiano",The Sun of the Island,2024-04-17,2FniJxOBwfJdOiTRaW9icP,https://i.scdn.co/image/ab67616d0000b273fa50143e1790d93361244046,CafeCroissant,23,2024-05-03
 I’m on a Roll,Kimberose,I'm on a Roll,2024-04-18,1y2OtZELxfZRSPXOwkhjHv,https://i.scdn.co/image/ab67616d0000b27396a969e4cc0197de3e3a4f7b,CafeCroissant,27,2024-05-03
 Neverender,"Justice, Tame Impala",Hyperdrama,2024-04-26,3aQ9MHkMeL7Yu7jpyF62xn,https://i.scdn.co/image/ab67616d0000b2738f4b5df3a6ee2abb733080a9,Mint,1,2024-05-03
-Baddy On The Floor,"Jamie xx, Honey Dijon",Baddy On The Floor,2024-04-15,3CqaTHbiU2nBy3Ar9RnDHN,https://i.scdn.co/image/ab67616d0000b27372441424fe34dde8e76f8daa,Mint,2,2024-05-03
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,Mint,3,2024-05-03
 On Again,Mau P,On Again,2024-04-30,5vASuVQkngtFoCOczem52V,https://i.scdn.co/image/ab67616d0000b27365196ad375037658c9b2637a,Mint,4,2024-05-03
-Roar,Charlotte de Witte,Roar,2024-04-11,1FubT3w22RMHC3vreAL7cH,https://i.scdn.co/image/ab67616d0000b2739fae5caa6d6bf5e3da412047,Mint,5,2024-05-03
 How You Feel (Ft. Leven Kali),"ANOTR, Erik Bandt, Leven Kali",How You Feel (Ft. Leven Kali),2024-04-19,3Kwj07sN1wdzlRNMU8rNX0,https://i.scdn.co/image/ab67616d0000b273e6ef824871ae510415373427,Mint,6,2024-05-03
 Right Here,Becky Hill,Right Here,2024-05-01,2VpKBfkqAZr1iAwwg8AGDO,https://i.scdn.co/image/ab67616d0000b273cc2f4203fe1d7f64e79f6ba6,Mint,7,2024-05-03
 Summertime Blues (feat. Nathan Nicholson),"Chris Lake, Sammy Virji, Nathan Nicholson",Summertime Blues (feat. Nathan Nicholson),2024-04-26,6q36Cqt2d3O5jqrQR9uXCp,https://i.scdn.co/image/ab67616d0000b273f3b42c0ca1c479b251e1b393,Mint,10,2024-05-03
@@ -167,101 +202,34 @@ Ride Or Die,Aluna,Ride Or Die,2024-05-03,2CbuQYjqutizzJraX3ILZY,https://i.scdn.c
 In My Bones,"Lost Frequencies, David Kushner",In My Bones,2024-04-19,1dcK8O2qEq7E34o4ImQEco,https://i.scdn.co/image/ab67616d0000b27336d804998bb567e07dfbaeaf,Mint,18,2024-05-03
 MAGIC (feat. babyidontlikeyou),"Gryffin, babyidontlikeyou",MAGIC,2024-04-24,7pTC4natqyNBB0EBtdDeYi,https://i.scdn.co/image/ab67616d0000b2735d01971ec90ce59944076366,Mint,24,2024-05-03
 Kimbara,Barry Cant Swim,Kimbara,2024-04-30,3iHrGCUXfZ4BoOy615Ydbk,https://i.scdn.co/image/ab67616d0000b2730ade2366138036037a83b1d6,Mint,26,2024-05-03
-LA LECHE MATERNA,El Alfa,LA LECHE MATERNA,2024-04-11,6HjooscdDxnbZ169Y47gAF,https://i.scdn.co/image/ab67616d0000b273724ca8caa943911ae93d3227,ThisIsElAlfa,1,2024-04-26
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,FutursHits,1,2024-04-26
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,FutursHits,2,2024-04-26
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,FutursHits,3,2024-04-26
 Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,FutursHits,6,2024-04-26
-Nobody - from Kaiju No. 8,OneRepublic,Nobody (from Kaiju No. 8),2024-04-12,47N81NMkB488fuOwOC3Oip,https://i.scdn.co/image/ab67616d0000b2732b386fcbb5a5e90bba728f95,FutursHits,9,2024-04-26
-I Forgive You,Sia,I Forgive You,2024-04-12,5ytXEc1V6ZdSpFNsg81X8O,https://i.scdn.co/image/ab67616d0000b273e5c35fbeca0cc5a86ee86b3b,FutursHits,11,2024-04-26
-Danza Kuduro - Tiësto Remix,"Don Omar, Lucenzo, Tiësto",Danza Kuduro (Tiësto Remix),2024-04-12,7mdDd1a4TtNGqDW1lXc14o,https://i.scdn.co/image/ab67616d0000b27317a762165593b12a0aba41e9,FutursHits,16,2024-04-26
 ADIVINO,"Myke Towers, Bad Bunny",ADIVINO,2024-04-25,0LZy30mVmxqUpdQmaXKXBd,https://i.scdn.co/image/ab67616d0000b273b41f34aa51be675c5cfd3d94,VivaLatino,4,2024-04-26
-LA NENA,"Lyanno, Rauw Alejandro",LA NENA,2024-04-11,1XV28AhakcpzWGBmU2j2Ld,https://i.scdn.co/image/ab67616d0000b2739b6ba2e8aff0caf9147195e0,VivaLatino,7,2024-04-26
-Enrolar - Fantastic Four Remix,"Kidd Voodoo, DrefQuila, Young Cister, Easykid, Swift 047",Enrolar (Fantastic Four Remix),2024-04-11,4Br7zuCL1Jetik8COatafL,https://i.scdn.co/image/ab67616d0000b27341899b48bc7563cfa753f6bb,VivaLatino,12,2024-04-26
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,VivaLatino,17,2024-04-26
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,VivaLatino,18,2024-04-26
-"BESAME (feat. Tiago PZK, Khea & Neo Pistea) - Remix","Bhavi, Seven Kayne, Milo j, Tiago PZK, KHEA, Neo Pistea","BESAME (feat. Tiago PZK, Khea & Neo Pistea) [Remix]",2024-04-16,3GD6eImRvT0zgr8cQnokUq,https://i.scdn.co/image/ab67616d0000b27322efff8b62ad1ece2d69cba6,VivaLatino,26,2024-04-26
-Dime,"El Malilla, Maury",Dime,2024-04-15,7IJph8SanpysMOFmXQCJth,https://i.scdn.co/image/ab67616d0000b273ec6061bf3bd32c4a2ad276f5,VivaLatino,29,2024-04-26
-Tout ce que l'on dit (Mais qu'on ne fait pas) - Edit,Grégoire,Vivre,2024-04-11,0hsCfpvzUowipx8KQcsWuu,https://i.scdn.co/image/ab67616d0000b273ec8ca327bdb57b2fce401f1c,GrandHit,25,2024-04-26
-Starburster,Fontaines D.C.,Starburster,2024-04-17,1cg4xD453Wuol9fNsRDbsV,https://i.scdn.co/image/ab67616d0000b2730aa950a429f1a159fa211a75,RockThis,1,2024-04-26
 Nothing To Do,Kings of Leon,Nothing To Do,2024-04-19,2Eza3ko1jcN2xkm6BkeUM4,https://i.scdn.co/image/ab67616d0000b2738c61853889028b5055be56d1,RockThis,2,2024-04-26
 Broken Man,St. Vincent,All Born Screaming,2024-04-26,1kgLXgHrXecZyRCDROfAPb,https://i.scdn.co/image/ab67616d0000b273902e9fffc3787dd4fe7678e7,RockThis,3,2024-04-26
 Karma Police,Pierce The Veil,Karma Police,2024-04-19,2GBeNjgz5HSvBkE7dRryxk,https://i.scdn.co/image/ab67616d0000b2736a0baadb25a407525671c3e1,RockThis,13,2024-04-26
-THE DRAIN,"Bad Omens, HEALTH, SWARM",THE DRAIN,2024-04-17,0LSgZIdGUQtaXxlFN9thhc,https://i.scdn.co/image/ab67616d0000b273edeaccc3ae8b843066d91edf,RockThis,28,2024-04-26
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,Workout,2,2024-04-26
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY,2024-04-19,2fPvQfGQEZOKtJ9qXeL4x8,https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa,Workout,9,2024-04-26
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,Workout,29,2024-04-26
 Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,3,2024-04-26
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,TodayTopHits,4,2024-04-26
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,TodayTopHits,12,2024-04-26
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,TodayTopHits,16,2024-04-26
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,TodayTopHits,22,2024-04-26
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,JustHits,1,2024-04-26
 Friday,"The Chainsmokers, Fridayy",Friday,2024-04-26,03bOA3BAjZiqJOGyFmWYFz,https://i.scdn.co/image/ab67616d0000b273fa32e83a0fa02c8c0eaeedd0,JustHits,2,2024-04-26
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33,JustHits,4,2024-04-26
 Easy,Jess Glynne,JESS,2024-04-26,2irLZwJgLkQZRdXnUoILhq,https://i.scdn.co/image/ab67616d0000b273d8ffb5a1b867d980d895d95f,JustHits,8,2024-04-26
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,JustHits,12,2024-04-26
-Mistake,Mimi Webb,Mistake,2024-04-12,1WLpHzABY3TFLkOQoU4bDW,https://i.scdn.co/image/ab67616d0000b273d97ab204c85c9a1d21361f43,JustHits,14,2024-04-26
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,JustHits,21,2024-04-26
-Forget About Us,Perrie,Forget About Us,2024-04-12,3wmnP7CY38ajyGfZUZ6vce,https://i.scdn.co/image/ab67616d0000b27301385b29ad2e8fe752231abd,JustHits,23,2024-04-26
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,JustHits,28,2024-04-26
 TRAP2016,"Maluma, Darell",TRAP2016,2024-04-19,0MOZK0XOxP32RTW1QwVWht,https://i.scdn.co/image/ab67616d0000b273d26aded572aef066e57f1e75,ThisIsMaluma,3,2024-04-26
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,BigOnTheInternet,5,2024-04-26
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,BigOnTheInternet,12,2024-04-26
-Karma's A Bitch,Brit Smith,Karma's A Bitch,2024-04-14,3LwEb2gndSporUInoVxUFB,https://i.scdn.co/image/ab67616d0000b273bbe34f4a6b9ecb723c0f7f44,BigOnTheInternet,13,2024-04-26
-BREAK A NECK (w/ Ayesha Erotica),"Odetari, Ayesha Erotica",BREAK A NECK (w/ Ayesha Erotica),2024-04-17,0hmd7it20lGXWfNPOUcYUp,https://i.scdn.co/image/ab67616d0000b273604a3f21b0538de84c9c726a,BigOnTheInternet,15,2024-04-26
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,ExitosColombia,2,2024-04-26
-Mirame,"Blessd, Ovy On The Drums",Mirame,2024-04-17,2btNsI4OvcVl7SAHQQDHFB,https://i.scdn.co/image/ab67616d0000b273b62a2ec2d61d48f34a368144,ExitosColombia,10,2024-04-26
-Caroline,"Baby Rose, BADBADNOTGOOD, Mereba",Slow Burn,2024-04-12,5SqHQPdRnsypIJEJNTspWE,https://i.scdn.co/image/ab67616d0000b273133bfea3a205d035cee306ad,CafeCroissant,2,2024-04-26
-The Sun of the Island,"Peter von Poehl, Marie Modiano",The Sun of the Island,2024-04-17,2FniJxOBwfJdOiTRaW9icP,https://i.scdn.co/image/ab67616d0000b273fa50143e1790d93361244046,CafeCroissant,9,2024-04-26
 Bones Shake,Hazlett,Bones Shake,2024-04-19,2TX0eN7jdjQiGx7NHSax7l,https://i.scdn.co/image/ab67616d0000b273e51088f0dab9939ca351df58,CafeCroissant,13,2024-04-26
 I’m on a Roll,Kimberose,I'm on a Roll,2024-04-18,1y2OtZELxfZRSPXOwkhjHv,https://i.scdn.co/image/ab67616d0000b27396a969e4cc0197de3e3a4f7b,CafeCroissant,22,2024-04-26
 How You Feel (Ft. Leven Kali),"ANOTR, Erik Bandt, Leven Kali",How You Feel (Ft. Leven Kali),2024-04-19,3Kwj07sN1wdzlRNMU8rNX0,https://i.scdn.co/image/ab67616d0000b273e6ef824871ae510415373427,Mint,1,2024-04-26
-Roar,Charlotte de Witte,Roar,2024-04-11,1FubT3w22RMHC3vreAL7cH,https://i.scdn.co/image/ab67616d0000b2739fae5caa6d6bf5e3da412047,Mint,2,2024-04-26
-Baddy On The Floor,"Jamie xx, Honey Dijon",Baddy On The Floor,2024-04-15,3CqaTHbiU2nBy3Ar9RnDHN,https://i.scdn.co/image/ab67616d0000b27372441424fe34dde8e76f8daa,Mint,5,2024-04-26
 For Life (feat. Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,Mint,8,2024-04-26
 In My Bones,"Lost Frequencies, David Kushner",In My Bones,2024-04-19,1dcK8O2qEq7E34o4ImQEco,https://i.scdn.co/image/ab67616d0000b27336d804998bb567e07dfbaeaf,Mint,15,2024-04-26
-LA LECHE MATERNA,El Alfa,LA LECHE MATERNA,2024-04-11,6HjooscdDxnbZ169Y47gAF,https://i.scdn.co/image/ab67616d0000b273724ca8caa943911ae93d3227,ThisIsElAlfa,1,2024-04-19
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,FutursHits,1,2024-04-19
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,FutursHits,2,2024-04-19
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,FutursHits,3,2024-04-19
-Nobody - from Kaiju No. 8,OneRepublic,Nobody (from Kaiju No. 8),2024-04-12,47N81NMkB488fuOwOC3Oip,https://i.scdn.co/image/ab67616d0000b2732b386fcbb5a5e90bba728f95,FutursHits,6,2024-04-19
-Danza Kuduro - Tiësto Remix,"Don Omar, Lucenzo, Tiësto",Danza Kuduro (Tiësto Remix),2024-04-12,7mdDd1a4TtNGqDW1lXc14o,https://i.scdn.co/image/ab67616d0000b27317a762165593b12a0aba41e9,FutursHits,13,2024-04-19
-Teka (with Peso Pluma),"DJ Snake, Peso Pluma",Teka (with Peso Pluma),2024-04-17,555maXFEF9m0lE4UGRzCHk,https://i.scdn.co/image/ab67616d0000b27324861100b34630be0af122ce,VivaLatino,14,2024-04-19
-ATARI,Danna Paola,CHILDSTAR,2024-04-12,26Fvbip1soBIK5RWJYco05,https://i.scdn.co/image/ab67616d0000b273a57c9052931d524caa13156f,VivaLatino,24,2024-04-19
-Starburster,Fontaines D.C.,Starburster,2024-04-17,1cg4xD453Wuol9fNsRDbsV,https://i.scdn.co/image/ab67616d0000b2736afb2bd7879a9da518263eee,RockThis,1,2024-04-19
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,Workout,14,2024-04-19
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,Workout,24,2024-04-19
 Fortnight (feat. Post Malone),"Taylor Swift, Post Malone",THE TORTURED POETS DEPARTMENT,2024-04-18,2OzhQlSqBEmt7hmkYxfT6m,https://i.scdn.co/image/ab67616d0000b273fb3cda178f23d8326be8fdbe,TodayTopHits,1,2024-04-19
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,TodayTopHits,4,2024-04-19
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,TodayTopHits,12,2024-04-19
-Mistake,Mimi Webb,Mistake,2024-04-12,1WLpHzABY3TFLkOQoU4bDW,https://i.scdn.co/image/ab67616d0000b273d97ab204c85c9a1d21361f43,JustHits,1,2024-04-19
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,JustHits,4,2024-04-19
 I Can Do It With a Broken Heart,Taylor Swift,THE TORTURED POETS DEPARTMENT,2024-04-18,4q5YezDOIPcoLr8R81x9qy,https://i.scdn.co/image/ab67616d0000b273fb3cda178f23d8326be8fdbe,JustHits,7,2024-04-19
-Forget About Us,Perrie,Forget About Us,2024-04-12,3wmnP7CY38ajyGfZUZ6vce,https://i.scdn.co/image/ab67616d0000b27301385b29ad2e8fe752231abd,JustHits,18,2024-04-19
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,JustHits,23,2024-04-19
 Dance Alone - Qing Madi & Nonso Amadi Remix,"Preston Pablo, Qing Madi, Nonso Amadi",Dance Alone (Qing Madi & Nonso Amadi Remix),2024-04-19,3hS56srxJHe84zPZcLx8fO,https://i.scdn.co/image/ab67616d0000b27321b9cd637f26db5d3faa8640,JustHits,26,2024-04-19
-Karma's A Bitch,Brit Smith,Karma's A Bitch,2024-04-14,3LwEb2gndSporUInoVxUFB,https://i.scdn.co/image/ab67616d0000b273bbe34f4a6b9ecb723c0f7f44,BigOnTheInternet,9,2024-04-19
-A Bar Song (Tipsy),Shaboozey,A Bar Song (Tipsy),2024-04-12,2FQrifJ1N335Ljm3TjTVVf,https://i.scdn.co/image/ab67616d0000b27380d86d636244b72a3a1eede2,BigOnTheInternet,10,2024-04-19
 "Ride Or Die, Pt. 2 (with Villano Antillano & Tokischa)","Sevdaliza, Villano Antillano, Tokischa","Ride Or Die, Pt. 2",2024-04-18,5oYVxFt2k4SkVp6wzVsFWN,https://i.scdn.co/image/ab67616d0000b27314c2bc6e79b87f232c38b547,BigOnTheInternet,17,2024-04-19
-Caroline,"Baby Rose, BADBADNOTGOOD, Mereba",Slow Burn,2024-04-12,5SqHQPdRnsypIJEJNTspWE,https://i.scdn.co/image/ab67616d0000b273133bfea3a205d035cee306ad,CafeCroissant,5,2024-04-19
-The Sun of the Island,"Peter von Poehl, Marie Modiano",The Sun of the Island,2024-04-17,2FniJxOBwfJdOiTRaW9icP,https://i.scdn.co/image/ab67616d0000b273fa50143e1790d93361244046,CafeCroissant,9,2024-04-19
 Bones Shake,Hazlett,Bones Shake,2024-04-19,2TX0eN7jdjQiGx7NHSax7l,https://i.scdn.co/image/ab67616d0000b273e51088f0dab9939ca351df58,CafeCroissant,13,2024-04-19
 I’m on a Roll,Kimberose,I'm on a Roll,2024-04-18,1y2OtZELxfZRSPXOwkhjHv,https://i.scdn.co/image/ab67616d0000b27396a969e4cc0197de3e3a4f7b,CafeCroissant,24,2024-04-19
 How You Feel (Ft. Leven Kali),"ANOTR, Erik Bandt, Leven Kali",How You Feel (Ft. Leven Kali),2024-04-19,3Kwj07sN1wdzlRNMU8rNX0,https://i.scdn.co/image/ab67616d0000b27345bdc09e52061e0624a4cea2,Mint,2,2024-04-19
-Roar,Charlotte de Witte,Roar,2024-04-11,1FubT3w22RMHC3vreAL7cH,https://i.scdn.co/image/ab67616d0000b2739fae5caa6d6bf5e3da412047,Mint,3,2024-04-19
-Baddy On The Floor,"Jamie xx, Honey Dijon",Baddy On The Floor,2024-04-15,3CqaTHbiU2nBy3Ar9RnDHN,https://i.scdn.co/image/ab67616d0000b27372441424fe34dde8e76f8daa,Mint,5,2024-04-19
 For Life (feat. Zak Abel & Nile Rodgers),"Kygo, Zak Abel, Nile Rodgers",For Life (feat. Zak Abel & Nile Rodgers),2024-04-19,4QfikoJtCEiOj7G5R9m3sP,https://i.scdn.co/image/ab67616d0000b2737198e498826796ff81f560a7,Mint,6,2024-04-19
 In My Bones,"Lost Frequencies, David Kushner",In My Bones,2024-04-19,1dcK8O2qEq7E34o4ImQEco,https://i.scdn.co/image/ab67616d0000b27336d804998bb567e07dfbaeaf,Mint,16,2024-04-19
-Roar,Charlotte de Witte,Roar,2024-04-11,1FubT3w22RMHC3vreAL7cH,https://i.scdn.co/image/ab67616d0000b2739fae5caa6d6bf5e3da412047,Mint,1,2024-04-12
-Mistake,Mimi Webb,Mistake,2024-04-12,1WLpHzABY3TFLkOQoU4bDW,https://i.scdn.co/image/ab67616d0000b273d97ab204c85c9a1d21361f43,JustHits,3,2024-04-12
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,JustHits,4,2024-04-12
-UNDEFEATED,"XG, VALORANT",UNDEFEATED,2024-04-12,0NrObqc8nK1XcDNPJNBKRV,https://i.scdn.co/image/ab67616d0000b273719bf2389b183bd96df89fbf,JustHits,14,2024-04-12
-Forget About Us,Perrie,Forget About Us,2024-04-12,3wmnP7CY38ajyGfZUZ6vce,https://i.scdn.co/image/ab67616d0000b27301385b29ad2e8fe752231abd,JustHits,20,2024-04-12
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,JustHits,28,2024-04-12
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,FutursHits,2,2024-04-12
-Nobody - from Kaiju No. 8,OneRepublic,Nobody (from Kaiju No. 8),2024-04-12,47N81NMkB488fuOwOC3Oip,https://i.scdn.co/image/ab67616d0000b2732b386fcbb5a5e90bba728f95,FutursHits,13,2024-04-12
-Illusion,Dua Lipa,Illusion,2024-04-11,59xD5osEFsaNt5PXfIKUnX,https://i.scdn.co/image/ab67616d0000b273c01fb32d3c89474b4c5d17fd,TodayTopHits,1,2024-04-12
-We Still Don't Trust You,"Future, Metro Boomin",WE STILL DON'T TRUST YOU,2024-04-12,7sVbKoBdhXtYCEOO6qC1SN,https://i.scdn.co/image/ab67616d0000b273962afebc072a661242cda591,TodayTopHits,24,2024-04-12
-Espresso,Sabrina Carpenter,Espresso,2024-04-12,2qSkIjg1o9h3YT9RAgYN75,https://i.scdn.co/image/ab67616d0000b273659cd4673230913b3918e0d5,TodayTopHits,29,2024-04-12
-ATARI,Danna Paola,CHILDSTAR,2024-04-12,26Fvbip1soBIK5RWJYco05,https://i.scdn.co/image/ab67616d0000b273a57c9052931d524caa13156f,VivaLatino,20,2024-04-12
