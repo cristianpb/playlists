@@ -1,72 +1,80 @@
 <!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.13.0">
 <title>New songs | Playlists dashboard</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="./_observablehq/theme-sun-faded.css">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
-<link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
-<link rel="modulepreload" href="./_import/components/tools.js?sha=a6cf6cc415e765985c3090725380e3f1d1ae34254e86bdcac134cbd0d404aa4f">
-<link rel="modulepreload" href="./_observablehq/client.js">
-<link rel="modulepreload" href="./_observablehq/runtime.js">
-<link rel="modulepreload" href="./_observablehq/stdlib.js">
-<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.16/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/binary-search-bounds@2.0.5/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-axis@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-brush@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-chord@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-color@3.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-contour@4.0.2/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-delaunay@6.0.4/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dispatch@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-drag@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dsv@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-ease@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-fetch@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-force@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-format@3.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-hierarchy@3.1.2/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-interpolate@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-path@3.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-polygon@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-quadtree@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-random@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale@4.0.2/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-selection@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-shape@3.2.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time-format@4.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time@3.1.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-timer@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-transition@3.0.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-zoom@3.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/delaunator@5.0.0/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/htl@0.3.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/internmap@2.0.3/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/interval-tree-1d@1.0.4/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/isoformat@0.2.1/+esm">
-<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/robust-predicates@3.0.2/+esm">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-sun-faded.362fe7c3.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.362fe7c3.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="./_observablehq/client.bb111eac.js">
+<link rel="modulepreload" href="./_observablehq/runtime.9393ab6d.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.3ac83553.js">
+<link rel="modulepreload" href="./_import/components/tools.3adc4897.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.3e4c82b9.js">
+<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/e828d8c8.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="./_npm/d3@7.9.0/7055d4c5.js">
+<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/e95f898e.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/d44feff9.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/5830b12a.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/626bedc4.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/ef1ec490.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/5e1ff060.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/5851d7ef.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/dcd02767.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/567840a0.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/cf9b720b.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/5dcd62f4.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/f8e03c56.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/5bc129e1.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/19c92b44.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/8debb4ba.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/4b0cc581.js">
+<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
 <script type="module">
 
-import {define} from "./_observablehq/client.js";
+import {define} from "./_observablehq/client.bb111eac.js";
+import {registerFile} from "./_observablehq/stdlib.3ac83553.js";
 
-define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], files: [{"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.csv"},{"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.csv"},{"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.csv"}], body: async (FileAttachment) => {
-const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.js?sha=a6cf6cc415e765985c3090725380e3f1d1ae34254e86bdcac134cbd0d404aa4f");
-const latestSongs = await FileAttachment("data/latestArtists.csv").csv({typed: true})
-const diffData = await FileAttachment("data/playlistdiff.csv").csv().then(data => {
+registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.81cfaa80.csv","lastModified":1732227342352,"size":1698035});
+registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.e962f035.csv","lastModified":1732227341116,"size":21595});
+registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.bda11405.csv","lastModified":1732227341640,"size":637615});
+
+define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
+const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.3adc4897.js");
+const latestSongs = await FileAttachment("./data/latestArtists.csv").csv({typed: true})
+const diffData = await FileAttachment("./data/playlistdiff.csv").csv().then(data => {
       return data.map(row => {
         row.commit_date = parseDate(new Date(row.commit_date))
         return row
       });
     });
-const bestArtists = await FileAttachment("data/bestArtists.csv").csv().then(data => {
+const bestArtists = await FileAttachment("./data/bestArtists.csv").csv().then(data => {
       return data.map(row => {
         row.commit_date_str = row.commit_date;
         row.commit_date = new Date(row.commit_date);
@@ -78,7 +86,7 @@ const bestArtists = await FileAttachment("data/bestArtists.csv").csv().then(data
 return {mostFrequent,parseDate,BestSongsPlot,BestArtistsPlot,RecentSongAdds,RecentSongsPlot,latestSongs,diffData,bestArtists};
 }});
 
-define({id: "6be40f32", inline: true, inputs: ["RecentSongsPlot","latestSongs","display"], body: async (RecentSongsPlot,latestSongs,display) => {
+define({id: "6be40f32", mode: "inline", inputs: ["RecentSongsPlot","latestSongs","display"], body: async (RecentSongsPlot,latestSongs,display) => {
 display(await(
 RecentSongsPlot(latestSongs)
 ))
@@ -90,13 +98,13 @@ const commit_date_recent = Array.from(new Set(diffData.map(i => i.commit_date)))
 return {commit_date_old,commit_date_recent};
 }});
 
-define({id: "9bee6d36", inline: true, inputs: ["commit_date_old","display"], body: async (commit_date_old,display) => {
+define({id: "9bee6d36", mode: "inline", inputs: ["commit_date_old","display"], body: async (commit_date_old,display) => {
 display(await(
 commit_date_old
 ))
 }});
 
-define({id: "a3679416", inline: true, inputs: ["commit_date_recent","display"], body: async (commit_date_recent,display) => {
+define({id: "a3679416", mode: "inline", inputs: ["commit_date_recent","display"], body: async (commit_date_recent,display) => {
 display(await(
 commit_date_recent
 ))
@@ -114,7 +122,7 @@ const tableRows = RecentSongAdds(diffData, playlistChoosen, commit_date_old, com
 return {tableRows};
 }});
 
-define({id: "61b254b6", inline: true, inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
+define({id: "61b254b6", mode: "inline", inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
 display(await(
 Inputs.table(tableRows, {
   columns: ["position", "artists", "name", "album_name", "attribute"],
@@ -126,7 +134,7 @@ Inputs.table(tableRows, {
 ))
 }});
 
-define({id: "8241dd1b", inline: true, inputs: ["BestArtistsPlot","bestArtists","playlistChoosen","display"], body: async (BestArtistsPlot,bestArtists,playlistChoosen,display) => {
+define({id: "8241dd1b", mode: "inline", inputs: ["BestArtistsPlot","bestArtists","playlistChoosen","display"], body: async (BestArtistsPlot,bestArtists,playlistChoosen,display) => {
 display(await(
 BestArtistsPlot(bestArtists, playlistChoosen)
 ))
@@ -137,13 +145,13 @@ const mostPopularArtists = view(Inputs.select(mostFrequent(bestArtists.filter(i 
 return {mostPopularArtists};
 }});
 
-define({id: "3339d464", inline: true, inputs: ["BestSongsPlot","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,bestArtists,playlistChoosen,mostPopularArtists,display) => {
+define({id: "3339d464", mode: "inline", inputs: ["BestSongsPlot","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,bestArtists,playlistChoosen,mostPopularArtists,display) => {
 display(await(
 BestSongsPlot(bestArtists, playlistChoosen, mostPopularArtists)
 ))
 }});
 
-define({id: "bd09fb10", inline: true, inputs: ["Inputs","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,bestArtists,playlistChoosen,mostPopularArtists,display) => {
+define({id: "bd09fb10", mode: "inline", inputs: ["Inputs","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,bestArtists,playlistChoosen,mostPopularArtists,display) => {
 display(await(
 Inputs.table(bestArtists
   .filter((row, index) => bestArtists.map(i =>  `${i.song_id}${i.artists}`).indexOf(`${row.song_id}${row.artists}`) === index)
@@ -155,37 +163,41 @@ Inputs.table(bestArtists
 }});
 
 </script>
+</head>
+<body>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
 <h1 id="new-songs" tabindex="-1"><a class="observablehq-header-anchor" href="#new-songs">New songs</a></h1>
 <p>Recent songs from the last month.</p>
-<div id="cell-91381f7b" class="observablehq observablehq--block"></div>
+<div class="observablehq observablehq--block"><!--:91381f7b:--></div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-6be40f32" class="observablehq--loading"></span>
+    <observablehq-loading></observablehq-loading><!--:6be40f32:-->
   </div>
 </div>
 <h1 id="playlist-details" tabindex="-1"><a class="observablehq-header-anchor" href="#playlist-details">Playlist details</a></h1>
-<div id="cell-0cd3afd3" class="observablehq observablehq--block"></div>
-<p>From <span id="cell-9bee6d36" class="observablehq--loading"></span> to <span id="cell-a3679416" class="observablehq--loading"></span> new songs have been added to the playlist.</p>
-<div id="cell-3c7c7c53" class="observablehq observablehq--block"></div>
-<div id="cell-6153a948" class="observablehq observablehq--block"></div>
+<div class="observablehq observablehq--block"><!--:0cd3afd3:--></div>
+<p>From <observablehq-loading></observablehq-loading><!--:9bee6d36:--> to <observablehq-loading></observablehq-loading><!--:a3679416:--> new songs have been added to the playlist.</p>
+<div class="observablehq observablehq--block"><!--:3c7c7c53:--></div>
+<div class="observablehq observablehq--block"><!--:6153a948:--></div>
 <div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <span id="cell-61b254b6" class="observablehq--loading"></span>
+  <observablehq-loading></observablehq-loading><!--:61b254b6:-->
 </div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-8241dd1b" class="observablehq--loading"></span>
+    <observablehq-loading></observablehq-loading><!--:8241dd1b:-->
   </div>
 </div>
-<div id="cell-06634e09" class="observablehq observablehq--block"></div>
+<div class="observablehq observablehq--block"><!--:06634e09:--></div>
 <div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
   <div class="card">
-    <span id="cell-3339d464" class="observablehq--loading"></span>
+    <observablehq-loading></observablehq-loading><!--:3339d464:-->
   </div>
 </div>
 <div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <span id="cell-bd09fb10" class="observablehq--loading"></span>
+  <observablehq-loading></observablehq-loading><!--:bd09fb10:-->
 </div>
 </main>
 </div>
+</body>
+</html>
