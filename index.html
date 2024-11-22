@@ -61,9 +61,9 @@
 import {define} from "./_observablehq/client.bb111eac.js";
 import {registerFile} from "./_observablehq/stdlib.3ac83553.js";
 
-registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.81cfaa80.csv","lastModified":1732227342352,"size":1698035});
-registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.e962f035.csv","lastModified":1732227341116,"size":21595});
-registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.bda11405.csv","lastModified":1732227341640,"size":637615});
+registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.d6a340ee.csv","lastModified":1732255960046,"size":1694955});
+registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.68624f5b.csv","lastModified":1732255958770,"size":35182});
+registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.53761a77.csv","lastModified":1732255959306,"size":641627});
 
 define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
 const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.3adc4897.js");
