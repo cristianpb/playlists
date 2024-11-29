@@ -12,11 +12,11 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.362fe7c3.css">
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="modulepreload" href="./_observablehq/client.bb111eac.js">
+<link rel="modulepreload" href="./_observablehq/client.938239ab.js">
 <link rel="modulepreload" href="./_observablehq/runtime.9393ab6d.js">
-<link rel="modulepreload" href="./_observablehq/stdlib.3ac83553.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.95bfbf7e.js">
 <link rel="modulepreload" href="./_import/components/tools.3adc4897.js">
-<link rel="modulepreload" href="./_observablehq/stdlib/inputs.3e4c82b9.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.d397b6a8.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/e828d8c8.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
@@ -58,12 +58,12 @@
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
 <script type="module">
 
-import {define} from "./_observablehq/client.bb111eac.js";
-import {registerFile} from "./_observablehq/stdlib.3ac83553.js";
+import {define} from "./_observablehq/client.938239ab.js";
+import {registerFile} from "./_observablehq/stdlib.95bfbf7e.js";
 
-registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.d6a340ee.csv","lastModified":1732255960046,"size":1694955});
-registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.68624f5b.csv","lastModified":1732255958770,"size":35182});
-registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.53761a77.csv","lastModified":1732255959306,"size":641627});
+registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.569fda71.csv","lastModified":1732860795048,"size":1694027});
+registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.a949910e.csv","lastModified":1732860793808,"size":32285});
+registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.7154dcfe.csv","lastModified":1732860794324,"size":646256});
 
 define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
 const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.3adc4897.js");

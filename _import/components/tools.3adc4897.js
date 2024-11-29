@@ -1,5 +1,5 @@
 import * as Plot from "../../_npm/@observablehq/plot@0.6.16/e828d8c8.js";
-import {resize} from "../../_observablehq/stdlib.3ac83553.js";
+import {resize} from "../../_observablehq/stdlib.95bfbf7e.js";
 
 export const mostFrequent = arr => {
   const counts = arr.reduce((counts, num) => {
