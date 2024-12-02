@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="./_observablehq/client.938239ab.js">
 <link rel="modulepreload" href="./_observablehq/runtime.9393ab6d.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.95bfbf7e.js">
-<link rel="modulepreload" href="./_import/components/tools.3adc4897.js">
+<link rel="modulepreload" href="./_import/components/tools.a529bd64.js">
 <link rel="modulepreload" href="./_observablehq/stdlib/inputs.d397b6a8.js">
 <link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/e828d8c8.js">
 <link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
@@ -61,12 +61,12 @@
 import {define} from "./_observablehq/client.938239ab.js";
 import {registerFile} from "./_observablehq/stdlib.95bfbf7e.js";
 
-registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.569fda71.csv","lastModified":1732860795048,"size":1694027});
-registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.a949910e.csv","lastModified":1732860793808,"size":32285});
-registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.7154dcfe.csv","lastModified":1732860794324,"size":646256});
+registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.569fda71.csv","lastModified":1733173563563,"size":1694027});
+registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.19280aab.csv","lastModified":1733173562179,"size":25412});
+registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.7154dcfe.csv","lastModified":1733173562771,"size":646256});
 
 define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
-const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.3adc4897.js");
+const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.a529bd64.js");
 const latestSongs = await FileAttachment("./data/latestArtists.csv").csv({typed: true})
 const diffData = await FileAttachment("./data/playlistdiff.csv").csv().then(data => {
       return data.map(row => {

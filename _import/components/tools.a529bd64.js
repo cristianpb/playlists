@@ -74,7 +74,7 @@ export function RecentSongsPlot(data_shallow) {
             x: (d, idx) => idx % 5,
             r: 20, // * width / 1100, //  (d) => Math.min(22, Math.cbrt(d.size / 1e3) * 6), // 20, // clip to a circle
             preserveAspectRatio: "xMidYMin slice", // try not to clip heads
-            text: (d) => d.name.replaceAll(" ", "\n").split("-")[0].split("(")[0],
+            text: (d) => String(d.name).replaceAll(" ", "\n").split("-")[0].split("(")[0],
             dx: 35,
             //fontSize: (d) => Math.min(11, Math.cbrt(1e9 / d.size ) / 6)
             //title: "label",
@@ -110,7 +110,7 @@ export function RecentSongsPlot(data_shallow) {
             y: "date",
             r: 20, // * width / 1100, //  (d) => Math.min(22, Math.cbrt(d.size / 1e3) * 6), // 20, // clip to a circle
             preserveAspectRatio: "xMidYMin slice", // try not to clip heads
-            text: (d) => d.name.replaceAll(" ", "\n").split("-")[0].split("(")[0],
+            text: (d) => String(d.name).replaceAll(" ", "\n").split("-")[0].split("(")[0],
             dy: 35,
             //fontSize: (d) => Math.min(11, Math.cbrt(1e9 / d.size ) / 6)
             //title: "label",
