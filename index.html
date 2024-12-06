@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.362fe7c3.css">
 <link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="modulepreload" href="./_observablehq/client.938239ab.js">
+<link rel="modulepreload" href="./_observablehq/client.03d92a1e.js">
 <link rel="modulepreload" href="./_observablehq/runtime.9393ab6d.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.95bfbf7e.js">
 <link rel="modulepreload" href="./_import/components/tools.a529bd64.js">
@@ -58,12 +58,12 @@
 <link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
 <script type="module">
 
-import {define} from "./_observablehq/client.938239ab.js";
+import {define} from "./_observablehq/client.03d92a1e.js";
 import {registerFile} from "./_observablehq/stdlib.95bfbf7e.js";
 
-registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.569fda71.csv","lastModified":1733173563563,"size":1694027});
-registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.19280aab.csv","lastModified":1733173562179,"size":25412});
-registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.7154dcfe.csv","lastModified":1733173562771,"size":646256});
+registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.d355c64f.csv","lastModified":1733465629257,"size":1690937});
+registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.a787aa51.csv","lastModified":1733465628041,"size":42357});
+registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.3efe34ef.csv","lastModified":1733465628553,"size":641913});
 
 define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
 const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.a529bd64.js");
