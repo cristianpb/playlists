@@ -17,22 +17,41 @@ const diffData = await FileAttachment("data/playlistdiff.csv").csv().then(data =
         return row
       });
     });
-const bestArtists = await FileAttachment("data/bestArtists.csv").csv().then(data => {
-      return data.map(row => {
-        row.commit_date_str = row.commit_date;
-        row.commit_date = new Date(row.commit_date);
-        row.name = row.name.toLowerCase();
-        row.position = +row.position;
-        return row
-      });
-    });
+ const stream = await FileAttachment("data/bestArtists.csv").stream()
+ const reader = stream.getReader();
+ let total = 0;
+ let bestArtists = [];
+ 
+ while (true) {
+   const {done, value} = await reader.read();
+   if (done) break;
+   total += value.length;
+   const chunkString = new TextDecoder().decode(value);
+   console.log("total", total)
+   //const chunkArray = []
+   chunkString.split("\n").forEach(row => {
+         const rowSplit = row.split(',')
+         if (rowSplit.length > 6) {
+         bestArtists.push({
+           "date": rowSplit[0],
+           "commit_date": rowSplit[1],
+           "song_id": rowSplit[2],
+           "artists": rowSplit[3],
+           "position": rowSplit[4],
+           "playlist": rowSplit[5],
+           "name": rowSplit[6],
+           "album_name": rowSplit[7],
+           "commit_date_str": rowSplit[1],
+           "commit_date" : new Date(rowSplit[1]),
+           "name" : rowSplit[6].toLowerCase(),
+           "position" : +rowSplit[4]
+         })
+         }
+       })
+   // bestArtists = [...bestArtists, ...chunkArray];
+   console.log("best", bestArtists)
+ }
 ```
-
-<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
-  <div class="card">
-    ${RecentSongsPlot(latestSongs)}
-  </div>
-</div>
 
 # Playlist details
 

@@ -1,17 +1,19 @@
 {
 	"name": "playlists",
 	"version": "0.0.1",
-  "scripts": {
-    "clean": "rm -rf docs/.observablehq/cache",
-    "build": "rm -rf dist && observable build",
-    "dev": "observable preview",
-    "deploy": "observable deploy",
-    "observable": "observable"
-  },
-  "dependencies": {
-    "@observablehq/framework": "^1.13.0",
-    "d3-dsv": "^3.0.1",
-    "d3-time-format": "^4.1.0"
-  },
+	"scripts": {
+		"clean": "rm -rf docs/.observablehq/cache",
+		"build": "rm -rf dist && observable build",
+		"dev": "observable preview",
+		"deploy": "observable deploy",
+		"observable": "observable"
+	},
+	"dependencies": {
+		"@observablehq/framework": "^1.13.0",
+		"csv-parse": "^5.6.0",
+		"d3-dsv": "^3.0.1",
+		"d3-time-format": "^4.1.0",
+		"stream-transform": "^3.3.3"
+	},
 	"type": "module"
 }
