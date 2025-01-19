@@ -21,14 +21,14 @@
       x: {label: "Date"},
       y: {label: "Position"},
       marks: [
-        Plot.line(dataFiltered
+        Plot.line(dataFiltered.filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
           , {
             x: "commit_date",
             y: "position",
             stroke: "artists",
             tip: {channels: {"artists": "artists", "playlist": "playlist"}}
           }),
-        Plot.text(dataFiltered
+        Plot.text(dataFiltered.filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
           , {
             filter: (d, idx) => (idx) % 4 === 0 ,
             x: "commit_date",

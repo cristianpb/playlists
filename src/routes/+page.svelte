@@ -52,7 +52,6 @@
     console.log("bestArtists", bestArtists.length);
 
     return bestArtists
-      .filter((value, index) => bestArtists.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
   }
 
   const findMostFrequent = (arr, n) => {
