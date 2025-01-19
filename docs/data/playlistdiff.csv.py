@@ -8,7 +8,7 @@ df = pd.read_pickle("docs/data/historical.pkl")
 last_commits = df['commit_date'].unique().tolist()[0:2]
 
 playlist_choosen = ['AllOut2000s', 'BigOnTheInternet', 'CafeCroissant',
-                    'ColdplayRadio', 'FreshFinds', 'FutursHits' 'GardeLaPeche',
+                    'ColdplayRadio', 'FreshFinds', 'FutursHits', 'GardeLaPeche',
                     'GooseBumps', 'GrandHit', 'GustavoCeratiRadio',
                     'HitRadioFr', 'ItsAllGood', 'JazzintheBackground',
                     'JustHits', 'Mint', 'MorningMotivation', 'MuseRadio',
