@@ -16,9 +16,6 @@
 			<li class:active={$page.url.pathname === '/'}>
         <a href="{base}/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/stats' ? 'page' : undefined}>
-        <a href="{base}/stats">Stats</a>
-			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
 			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />

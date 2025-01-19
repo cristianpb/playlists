@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 from io import StringIO
@@ -23,5 +24,8 @@ for idx in range(len(commits)):
     )
     mylist.append(df_tmp)
 
+if not os.path.exists('static/data'):
+    os.mkdir('static/data')
+
 df = pd.concat(mylist, ignore_index=True)
-df.to_pickle('docs/data/historical.pkl')
+df.to_parquet('static/data/historical.parquet')
