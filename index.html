@@ -1,203 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="generator" content="Observable Framework v1.13.0">
-<title>New songs | Playlists dashboard</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_observablehq/theme-sun-faded.362fe7c3.css">
-<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_observablehq/theme-sun-faded.362fe7c3.css">
-<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="modulepreload" href="./_observablehq/client.47d9be36.js">
-<link rel="modulepreload" href="./_observablehq/runtime.9393ab6d.js">
-<link rel="modulepreload" href="./_observablehq/stdlib.9280e4b7.js">
-<link rel="modulepreload" href="./_import/components/tools.a529bd64.js">
-<link rel="modulepreload" href="./_observablehq/stdlib/inputs.362bbdae.js">
-<link rel="modulepreload" href="./_npm/@observablehq/plot@0.6.16/7bc4434c.js">
-<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/407f7a1f.js">
-<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="./_npm/isoformat@0.2.1/c68fbd73.js">
-<link rel="modulepreload" href="./_npm/d3@7.9.0/b557a378.js">
-<link rel="modulepreload" href="./_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
-<link rel="modulepreload" href="./_npm/d3-array@3.2.4/37839b6a.js">
-<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/bd0afa17.js">
-<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/6495590f.js">
-<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/84d7b8e9.js">
-<link rel="modulepreload" href="./_npm/d3-color@3.1.0/2c0cdfa2.js">
-<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/d496a3b3.js">
-<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/00c41b5d.js">
-<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
-<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/ef06b1ff.js">
-<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/6f15f633.js">
-<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/35880c2a.js">
-<link rel="modulepreload" href="./_npm/d3-force@3.0.0/60bb70b3.js">
-<link rel="modulepreload" href="./_npm/d3-format@3.1.0/33fb7288.js">
-<link rel="modulepreload" href="./_npm/d3-geo@3.1.1/5e427f4b.js">
-<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/f1db2593.js">
-<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/034b7bcb.js">
-<link rel="modulepreload" href="./_npm/d3-path@3.1.0/4bb53638.js">
-<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/bbafde58.js">
-<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/aa5b35a8.js">
-<link rel="modulepreload" href="./_npm/d3-random@3.0.1/32c7fec2.js">
-<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/4143aac9.js">
-<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.1.0/b6952b03.js">
-<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/a4e530fb.js">
-<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/be692bd9.js">
-<link rel="modulepreload" href="./_npm/d3-time@3.1.0/3a9ac1c1.js">
-<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/28d1ef76.js">
-<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/f31b5398.js">
-<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/0c259fbf.js">
-<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/da4a6ccc.js">
-<link rel="modulepreload" href="./_npm/binary-search-bounds@2.0.5/1ee6c50d.js">
-<link rel="modulepreload" href="./_npm/internmap@2.0.3/5eed35fd.js">
-<link rel="modulepreload" href="./_npm/delaunator@5.0.1/e67acb27.js">
-<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/8ac9039b.js">
-<script type="module">
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.C-LKIVyt.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.D2C5B7VX.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DvRLA983.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/5YL_0G8K.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/D4sjPrci.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.CfZW2L1U.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DX4SwyQo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/4_xHa1Ib.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/DyWNm0nT.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/VLinQqgZ.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.B5a8VJTG.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/kYCum3QG.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.B9f6yWSS.js"><!--[--><meta name="description" content="Playlists app"><!--]--><title>Playlists</title>
+	</head>
+	<body data-sveltekit-prefetch>
+		<div><!--[--><!--[--><!----><div class="app svelte-8o1gnw"><header class="svelte-9fykbk"><div class="corner svelte-9fykbk"><p></p></div> <nav class="svelte-9fykbk"><svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-9fykbk"><path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" class="svelte-9fykbk"></path></svg> <ul class="svelte-9fykbk"><li class="svelte-9fykbk "><a href="./" class="svelte-9fykbk">Home</a></li></ul> <svg viewBox="0 0 2 3" aria-hidden="true" class="svelte-9fykbk"><path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" class="svelte-9fykbk"></path></svg></nav> <div class="corner svelte-9fykbk"><p></p></div></header><!----> <main class="svelte-8o1gnw"><!----><!----><div class="app"><!--[!--><!--]--> <select><!--[--><option value="AllOut2000s">AllOut2000s</option><option value="BigOnTheInternet">BigOnTheInternet</option><option value="CafeCroissant">CafeCroissant</option><option value="ColdplayRadio">ColdplayRadio</option><option value="FreshFinds">FreshFinds</option><option value="FutursHits">FutursHits</option><option value="GardeLaPeche">GardeLaPeche</option><option value="GooseBumps">GooseBumps</option><option value="GrandHit">GrandHit</option><option value="GustavoCeratiRadio">GustavoCeratiRadio</option><option value="HitRadioFr">HitRadioFr</option><option value="ItsAllGood">ItsAllGood</option><option value="JazzintheBackground">JazzintheBackground</option><option value="JustHits">JustHits</option><option value="Mint">Mint</option><option value="MorningMotivation">MorningMotivation</option><option value="MuseRadio">MuseRadio</option><option value="NewMusicFriday">NewMusicFriday</option><option value="PopRock">PopRock</option><option value="PopRockRadio">PopRockRadio</option><option value="PowerWorkout">PowerWorkout</option><option value="ReveilDouceur">ReveilDouceur</option><option value="RockClassics">RockClassics</option><option value="RockParty">RockParty</option><option value="RockThis">RockThis</option><option value="TheStrokesRadio">TheStrokesRadio</option><option value="ThisIsGustavoCerati">ThisIsGustavoCerati</option><option value="TodayTopHits">TodayTopHits</option><option value="VivaLatino">VivaLatino</option><option value="WakeUpHappy">WakeUpHappy</option><option value="Workout">Workout</option><!--]--></select> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--> <!--[!--><!--]--></div><!----><!----></main> <footer class="svelte-8o1gnw"><p>source code <a href="https://github.com/cristianpb/playlists" class="svelte-8o1gnw">github.com/cristianpb/playlists</a></p></footer></div><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_wfiy5u = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						assets: "/playlists"
+					};
 
-import {define} from "./_observablehq/client.47d9be36.js";
-import {registerFile} from "./_observablehq/stdlib.9280e4b7.js";
+					const element = document.currentScript.parentElement;
 
-registerFile("./data/bestArtists.csv", {"name":"./data/bestArtists.csv","mimeType":"text/csv","path":"./_file/data/bestArtists.c9a9d22c.csv","lastModified":1737094323188,"size":1705341});
-registerFile("./data/latestArtists.csv", {"name":"./data/latestArtists.csv","mimeType":"text/csv","path":"./_file/data/latestArtists.585600ec.csv","lastModified":1737094321997,"size":21105});
-registerFile("./data/playlistdiff.csv", {"name":"./data/playlistdiff.csv","mimeType":"text/csv","path":"./_file/data/playlistdiff.873d1ff3.csv","lastModified":1737094322498,"size":622847});
-
-define({id: "91381f7b", inputs: ["FileAttachment"], outputs: ["mostFrequent","parseDate","BestSongsPlot","BestArtistsPlot","RecentSongAdds","RecentSongsPlot","latestSongs","diffData","bestArtists"], body: async (FileAttachment) => {
-const {mostFrequent, parseDate, BestSongsPlot, BestArtistsPlot, RecentSongAdds, RecentSongsPlot} = await import("./_import/components/tools.a529bd64.js");
-const latestSongs = await FileAttachment("./data/latestArtists.csv").csv({typed: true})
-const diffData = await FileAttachment("./data/playlistdiff.csv").csv().then(data => {
-      return data.map(row => {
-        row.commit_date = parseDate(new Date(row.commit_date))
-        return row
-      });
-    });
-const bestArtists = await FileAttachment("./data/bestArtists.csv").csv().then(data => {
-      return data.map(row => {
-        row.commit_date_str = row.commit_date;
-        row.commit_date = new Date(row.commit_date);
-        row.name = row.name.toLowerCase();
-        row.position = +row.position;
-        return row
-      });
-    });
-return {mostFrequent,parseDate,BestSongsPlot,BestArtistsPlot,RecentSongAdds,RecentSongsPlot,latestSongs,diffData,bestArtists};
-}});
-
-define({id: "6be40f32", mode: "inline", inputs: ["RecentSongsPlot","latestSongs","display"], body: async (RecentSongsPlot,latestSongs,display) => {
-display(await(
-RecentSongsPlot(latestSongs)
-))
-}});
-
-define({id: "0cd3afd3", inputs: ["diffData"], outputs: ["commit_date_old","commit_date_recent"], body: (diffData) => {
-const commit_date_old = Array.from(new Set(diffData.map(i => i.commit_date)))[1];
-const commit_date_recent = Array.from(new Set(diffData.map(i => i.commit_date)))[0];
-return {commit_date_old,commit_date_recent};
-}});
-
-define({id: "9bee6d36", mode: "inline", inputs: ["commit_date_old","display"], body: async (commit_date_old,display) => {
-display(await(
-commit_date_old
-))
-}});
-
-define({id: "a3679416", mode: "inline", inputs: ["commit_date_recent","display"], body: async (commit_date_recent,display) => {
-display(await(
-commit_date_recent
-))
-}});
-
-define({id: "3c7c7c53", inputs: ["bestArtists","view","Inputs"], outputs: ["playlistsNames","playlistChoosen","artistsNames"], body: (bestArtists,view,Inputs) => {
-const playlistsNames = bestArtists.map(i => i.playlist)
-const playlistChoosen = view(Inputs.select(new Set(playlistsNames), {value: playlistsNames[0], label: "Playlists"}));
-const artistsNames = bestArtists.map(i => i.artists)
-return {playlistsNames,playlistChoosen,artistsNames};
-}});
-
-define({id: "6153a948", inputs: ["RecentSongAdds","diffData","playlistChoosen","commit_date_old","commit_date_recent"], outputs: ["tableRows"], body: (RecentSongAdds,diffData,playlistChoosen,commit_date_old,commit_date_recent) => {
-const tableRows = RecentSongAdds(diffData, playlistChoosen, commit_date_old, commit_date_recent)
-return {tableRows};
-}});
-
-define({id: "61b254b6", mode: "inline", inputs: ["Inputs","tableRows","display"], body: async (Inputs,tableRows,display) => {
-display(await(
-Inputs.table(tableRows, {
-  columns: ["position", "artists", "name", "album_name", "attribute"],
-  align: {"position": "left"},
-  format: {
-    attribute: (x) => x == "+" ? "New!" : x == "-" ? "🗑" : x > 0 ? `⬆${x}` : x == 0 ? '--' : `⬇${Math.abs(x)}`
-  }
-})
-))
-}});
-
-define({id: "8241dd1b", mode: "inline", inputs: ["BestArtistsPlot","bestArtists","playlistChoosen","display"], body: async (BestArtistsPlot,bestArtists,playlistChoosen,display) => {
-display(await(
-BestArtistsPlot(bestArtists, playlistChoosen)
-))
-}});
-
-define({id: "06634e09", inputs: ["view","Inputs","mostFrequent","bestArtists","playlistChoosen","artistsNames"], outputs: ["mostPopularArtists"], body: (view,Inputs,mostFrequent,bestArtists,playlistChoosen,artistsNames) => {
-const mostPopularArtists = view(Inputs.select(mostFrequent(bestArtists.filter(i => i.playlist == playlistChoosen).map(i => i.artists)).slice(0,10), {value: artistsNames[0], label: "Popular artists"}));
-return {mostPopularArtists};
-}});
-
-define({id: "3339d464", mode: "inline", inputs: ["BestSongsPlot","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (BestSongsPlot,bestArtists,playlistChoosen,mostPopularArtists,display) => {
-display(await(
-BestSongsPlot(bestArtists, playlistChoosen, mostPopularArtists)
-))
-}});
-
-define({id: "bd09fb10", mode: "inline", inputs: ["Inputs","bestArtists","playlistChoosen","mostPopularArtists","display"], body: async (Inputs,bestArtists,playlistChoosen,mostPopularArtists,display) => {
-display(await(
-Inputs.table(bestArtists
-  .filter((row, index) => bestArtists.map(i =>  `${i.song_id}${i.artists}`).indexOf(`${row.song_id}${row.artists}`) === index)
-  .filter((row, index) => (row.playlist == playlistChoosen) & (mostPopularArtists.includes(row.artists)))
-  , {
-  columns: ["artists", "name", "album_name", "date"],
-  })
-))
-}});
-
-</script>
-</head>
-<body>
-<div id="observablehq-center">
-<main id="observablehq-main" class="observablehq">
-<h1 id="new-songs" tabindex="-1"><a class="observablehq-header-anchor" href="#new-songs">New songs</a></h1>
-<p>Recent songs from the last month.</p>
-<div class="observablehq observablehq--block"><!--:91381f7b:--></div>
-<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
-  <div class="card">
-    <observablehq-loading></observablehq-loading><!--:6be40f32:-->
-  </div>
-</div>
-<h1 id="playlist-details" tabindex="-1"><a class="observablehq-header-anchor" href="#playlist-details">Playlist details</a></h1>
-<div class="observablehq observablehq--block"><!--:0cd3afd3:--></div>
-<p>From <observablehq-loading></observablehq-loading><!--:9bee6d36:--> to <observablehq-loading></observablehq-loading><!--:a3679416:--> new songs have been added to the playlist.</p>
-<div class="observablehq observablehq--block"><!--:3c7c7c53:--></div>
-<div class="observablehq observablehq--block"><!--:6153a948:--></div>
-<div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <observablehq-loading></observablehq-loading><!--:61b254b6:-->
-</div>
-<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
-  <div class="card">
-    <observablehq-loading></observablehq-loading><!--:8241dd1b:-->
-  </div>
-</div>
-<div class="observablehq observablehq--block"><!--:06634e09:--></div>
-<div class="grid grid-cols-1" style="grid-auto-rows: 560px;">
-  <div class="card">
-    <observablehq-loading></observablehq-loading><!--:3339d464:-->
-  </div>
-</div>
-<div class="card" style="margin: 1rem 0 2rem 0; padding: 0;">
-  <observablehq-loading></observablehq-loading><!--:bd09fb10:-->
-</div>
-</main>
-</div>
-</body>
+					Promise.all([
+						import("./_app/immutable/entry/start.D2C5B7VX.js"),
+						import("./_app/immutable/entry/app.CfZW2L1U.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
 </html>
