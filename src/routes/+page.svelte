@@ -29,7 +29,15 @@
   let artistChoosen
 
   $: dataFiltered = dataPrep(rawData, playlistChoosen)
-  $: songsNames = dataFiltered.filter(i => i.artists == artistChoosen)
+  $: songsNames = dataFiltered.filter(i => artistsInMostFrequent(i.artists, [artistChoosen]))
+
+  const artistsInMostFrequent = (artists, artistsList) => {
+    if (typeof artists === 'string') {
+      return artistsList.indexOf(artists) > -1
+    } else {
+      return artists.filter(artist =>  artistsList.indexOf(artist) > -1).length > 0
+    }
+  }
 
   const dataPrep = (data, playlistChoosen) => {
 
@@ -38,16 +46,13 @@
       .map(song => song.artists)
       .flat()
 
-    mostFrequentArtists = findMostFrequent(artistsNames, 5)
+    mostFrequentArtists = findMostFrequent(artistsNames, 7)
     console.log("mostFrequentArtists", mostFrequentArtists);
 
     artistChoosen = mostFrequentArtists[0]
 
     const bestArtists = data
-      .filter(song => (song.playlist == playlistChoosen) && (mostFrequentArtists.indexOf(song.artists) > -1))
-      .map(song => {
-        return song
-      })
+      .filter(song => (song.playlist == playlistChoosen) && (artistsInMostFrequent(song.artists, mostFrequentArtists)))
 
     console.log("bestArtists", bestArtists.length);
 
@@ -82,7 +87,6 @@
       latestSongs = data
         .filter(song => (song.position < 30) &&  ~(excludePlaylist.indexOf(song.playlist) > -1) && (song.date > new Date().setDate(new Date(last_commits[0]).getDate()-30)))
         .map(song => {
-          song.artists = song.artists.join(' ')
           song.commit_date = song.commit_date.toISOString().split('T')[0]
           song.position = Number(song.position)
           return song
@@ -93,13 +97,11 @@
       diffData = data
         .filter(song => (playlistSelection.indexOf(song.playlist) > -1) && (last_commits.indexOf(song.commit_date > -1)))
         .map(song => {
-          song.artists = (typeof song.artists === 'string') ? song.artists : song.artists.join(' ')
           song.commit_date = (typeof song.commit_date === 'string') ? song.commit_date : song.commit_date.toISOString().split('T')[0]
           song.position = Number(song.position)
           return song
         })
       console.log("diffData", diffData.length);
-
     }
 
     await parquetRead({
@@ -131,8 +133,8 @@
   {#if diffData.length > 0}
     <TableRows bind:diffData = {diffData} bind:playlistChoosen = {playlistChoosen} bind:last_commits = {last_commits} />
   {/if}
-  {#if dataFiltered.length > 0}
-    <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} />
+  {#if dataFiltered.length > 0 && mostFrequentArtists.length > 0}
+    <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} bind:mostFrequentArtists = {mostFrequentArtists} />
   {/if}
   {#if mostFrequentArtists.length > 0}
     <select bind:value={artistChoosen} >

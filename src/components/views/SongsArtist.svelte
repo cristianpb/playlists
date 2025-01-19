@@ -30,7 +30,7 @@
                 tip: {channels: {"artists": "artists", "playlist": "playlist"}}
               }),
               Plot.text(songsNames, {
-                filter: (d, idx) => (idx) % 5 === 0 ,
+                filter: (d, idx) => (idx) % 4 === 0 ,
                 x: "commit_date",
                 y: "position",
                 text: "name",

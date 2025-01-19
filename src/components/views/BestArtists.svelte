@@ -1,6 +1,6 @@
 <script>
   import * as Plot from '@observablehq/plot';
-  let { dataFiltered, playlistChoosen } = $props();
+  let { dataFiltered, playlistChoosen, mostFrequentArtists } = $props();
 
   let div = $state();
 
@@ -21,15 +21,25 @@
       x: {label: "Date"},
       y: {label: "Position"},
       marks: [
-        Plot.line(dataFiltered.filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
+        Plot.line(dataFiltered
+          .map(song => {
+            song.artists = (typeof song.artists === 'string') ? song.artists : song.artists.filter(artist =>  mostFrequentArtists.indexOf(artist) > -1)[0]
+            return song
+          })
+          .filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
           , {
             x: "commit_date",
             y: "position",
             stroke: "artists",
-            tip: {channels: {"artists": "artists", "playlist": "playlist"}}
+            tip: {channels: {"artists": "artists"}}
           }),
-        Plot.text(dataFiltered.filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
-          , {
+        Plot.text(dataFiltered
+          .map(song => {
+            song.artists = (typeof song.artists === 'string') ? song.artists : song.artists.filter(artist =>  mostFrequentArtists.indexOf(artist) > -1)[0]
+            return song
+          })
+          .filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
+      , {
             filter: (d, idx) => (idx) % 4 === 0 ,
             x: "commit_date",
             y: "position",
