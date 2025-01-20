@@ -1,20 +1,19 @@
 <script>
   import * as Plot from '@observablehq/plot';
-  export let latestSongs
+  let { latestSongs } = $props();
 
-  // TODO add response plot
+  let div = $state();
+  let w = $state();
 
-  const myplot = (node) => {
-    console.log("passing");
-    node.appendChild(
-      doRecentPlot(latestSongs)
-    )
-  }
+  $effect(() => {
+      div?.firstChild?.remove();
+      div?.append(doRecentPlot());
+  });
 
-  const doRecentPlot = (data) => {
+  const doRecentPlot = () => {
     console.log("dorecent");
-    const counts = data
-      .filter((value, index) => data.map(i => `${i.song_id}${i.commit_date}`).indexOf(`${value.song_id}${value.commit_date}`) === index)
+    const counts = latestSongs
+      .filter((value, index) => latestSongs.map(i => `${i.song_id}${i.commit_date}`).indexOf(`${value.song_id}${value.commit_date}`) === index)
       .reduce((acc, item) => {
       if (item.song_id in acc) {
         acc[item.song_id].count = acc[item.song_id].count + 1;
@@ -32,9 +31,8 @@
     console.log("count length", Object.keys(counts).length)
     return Plot.plot({
       grid: false,
-      width: 800,
-      height: 500,
-      title : `New songs from last month`,
+      width: w,
+      height: w/2,
       color: {
         legend: true,
       },
@@ -75,5 +73,5 @@
   
 </script>
 
-
-<div use:myplot ></div>
+<h2>New songs from last month </h2>
+<div bind:this={div} role="img" bind:clientWidth={w}></div>

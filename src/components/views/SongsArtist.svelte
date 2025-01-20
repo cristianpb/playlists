@@ -1,21 +1,20 @@
 <script>
   import * as Plot from '@observablehq/plot';
-  let { songsNames, artistChoosen } = $props();
+  let { songsNames, artistChoosen, playlistChoosen } = $props();
 
   let div = $state();
+  let w = $state();
 
   $effect(() => {
-    console.log("songsNames", songsNames);
-      div?.firstChild?.remove();
-      div?.append(doSongsPlot());
+    div?.firstChild?.remove();
+    div?.append(doSongsPlot());
   });
 
   const doSongsPlot = () => {
     return Plot.plot({
             grid: true,
-            width: 800,
-            height: 500,
-            title : `Best songs of ${artistChoosen}`,
+            width: w,
+            height: w/2,
             color: {
               legend: false,
             },
@@ -27,10 +26,10 @@
                 y: "position",
                 stroke: "name",
                 text: "name",
-                tip: {channels: {"artists": "artists", "playlist": "playlist"}}
+                tip: {channels: {"artists": "artists", "album_name": "album_name"}}
               }),
               Plot.text(songsNames, {
-                filter: (d, idx) => (idx) % 4 === 0 ,
+                filter: (d, idx) => idx % 4 === 0 ,
                 x: "commit_date",
                 y: "position",
                 text: "name",
@@ -43,4 +42,5 @@
 
 </script>
 
-<div bind:this={div} role="img"></div>
+<h2>{songsNames.length} Best songs of {artistChoosen} in {playlistChoosen}</h2>
+<div bind:this={div} role="img" bind:clientWidth={w} ></div>

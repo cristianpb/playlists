@@ -3,6 +3,7 @@
   let { dataFiltered, playlistChoosen, mostFrequentArtists } = $props();
 
   let div = $state();
+  let w = $state();
 
   $effect(() => {
       div?.firstChild?.remove();
@@ -12,9 +13,8 @@
   const doBestArtistPlot = () => {
     return Plot.plot({
       grid: true,
-      width: 800,
-      height: 500,
-      title : `Best artist evolution in ${playlistChoosen}`,
+      width: w,
+      height: w/2,
       color: {
         legend: false,
       },
@@ -45,7 +45,7 @@
             y: "position",
             text: "artists",
             dy: -6,
-            lineAnchor: "bottom"
+            lineAnchor: "bottom",
           })
       ],
     })
@@ -53,4 +53,5 @@
 
 </script>
 
-<div bind:this={div} role="img"></div>
+<h2>Best artist evolution in {playlistChoosen}</h2>
+<div bind:this={div} role="img" bind:clientWidth={w}></div>

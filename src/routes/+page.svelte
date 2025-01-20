@@ -91,7 +91,7 @@
           song.position = Number(song.position)
           return song
         })
-      console.log("data preprop latestSongs")
+      console.log("data preprop latestSongs", latestSongs.length);
 
 
       diffData = data
@@ -123,19 +123,27 @@
   {#if latestSongs.length > 0}
     <RecentSongsPlot {latestSongs} />
   {/if}
-  <select bind:value={playlistChoosen} >
-    {#each playlistSelection as playlist}
-      <option value={playlist}>
-      {playlist}
-      </option>
-    {/each}
-  </select>
+  <br>
+  <br>
+  {#if playlistSelection.length > 0}
+    <select bind:value={playlistChoosen} >
+      {#each playlistSelection as playlist}
+        <option value={playlist}>
+        {playlist}
+        </option>
+      {/each}
+    </select>
+  {/if}
+  <br>
   {#if diffData.length > 0}
     <TableRows bind:diffData = {diffData} bind:playlistChoosen = {playlistChoosen} bind:last_commits = {last_commits} />
   {/if}
+  <br>
   {#if dataFiltered.length > 0 && mostFrequentArtists.length > 0}
     <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} bind:mostFrequentArtists = {mostFrequentArtists} />
   {/if}
+  <br>
+  <br>
   {#if mostFrequentArtists.length > 0}
     <select bind:value={artistChoosen} >
       {#each mostFrequentArtists as artistsName}
@@ -145,7 +153,8 @@
       {/each}
     </select>
   {/if}
+  <br>
   {#if songsNames.length > 0}
-    <SongsArtist bind:songsNames = {songsNames} bind:artistChoosen = {artistChoosen} />
+    <SongsArtist bind:songsNames = {songsNames} bind:artistChoosen = {artistChoosen} bind:playlistChoosen = {playlistChoosen} />
   {/if}
 </div>
