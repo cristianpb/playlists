@@ -14,7 +14,7 @@
     return Plot.plot({
       grid: true,
       width: w,
-      height: w/2,
+      height: w < 500 ? 1.5 * w : w/2,
       color: {
         legend: false,
       },
