@@ -11,7 +11,6 @@
   });
 
   const doRecentPlot = () => {
-    console.log("dorecent");
     const counts = latestSongs
       .filter((value, index) => latestSongs.map(i => `${i.song_id}${i.commit_date}`).indexOf(`${value.song_id}${value.commit_date}`) === index)
       .reduce((acc, item) => {
@@ -32,7 +31,7 @@
     return Plot.plot({
       grid: false,
       width: w,
-      height: w/2,
+      height: w < 500 ? 1.5 * w : w/2,
       color: {
         legend: true,
       },
@@ -73,5 +72,5 @@
   
 </script>
 
-<h2>New songs from last month </h2>
+<h2>New songs from last month</h2>
 <div bind:this={div} role="img" bind:clientWidth={w}></div>

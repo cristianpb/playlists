@@ -42,5 +42,5 @@
 
 </script>
 
-<h2>{songsNames.length} Best songs of {artistChoosen} in {playlistChoosen}</h2>
+<h2>Best {[...new Set(songsNames.map(song => song.song_id))].length} songs of {artistChoosen} in {playlistChoosen}</h2>
 <div bind:this={div} role="img" bind:clientWidth={w} ></div>

@@ -24,6 +24,7 @@
         Plot.line(dataFiltered
           .map(song => {
             song.artists = (typeof song.artists === 'string') ? song.artists : song.artists.filter(artist =>  mostFrequentArtists.indexOf(artist) > -1)[0]
+            song.commit_date = new Date(song.commit_date)
             return song
           })
           .filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
@@ -36,6 +37,7 @@
         Plot.text(dataFiltered
           .map(song => {
             song.artists = (typeof song.artists === 'string') ? song.artists : song.artists.filter(artist =>  mostFrequentArtists.indexOf(artist) > -1)[0]
+            song.commit_date = new Date(song.commit_date)
             return song
           })
           .filter((value, index) => dataFiltered.map(i => `${i.artists}${i.commit_date}`).indexOf(`${value.artists}${value.commit_date}`) === index)
