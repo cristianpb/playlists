@@ -75,7 +75,7 @@
 	onMount(async () => {
     const url = `${base}/data/historical.parquet`;
     const getLatestSongs = (mydata) => {
-      const data = mydata.slice(0,50000)
+      const data = mydata
       rawData = data;
 
       last_commits = [...new Set(data.map(x => x.commit_date.toISOString().split('T')[0]))].slice(0,2);
@@ -85,7 +85,7 @@
                     'FreshFinds', 'DeepSleep']
       // TODO add dynamic date for date filter
       latestSongs = data
-        .filter(song => (song.position < 30) &&  ~(excludePlaylist.indexOf(song.playlist) > -1) && (song.date > new Date().setDate(new Date(last_commits[0]).getDate()-30)))
+        .filter(song => (song.position < 30) &&  !(excludePlaylist.indexOf(song.playlist) > -1) && (song.date > new Date().setDate(new Date(last_commits[0]).getDate()-30)))
         .map(song => {
           song.commit_date = song.commit_date.toISOString().split('T')[0]
           song.position = Number(song.position)
