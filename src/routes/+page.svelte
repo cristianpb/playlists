@@ -104,8 +104,11 @@
       console.log("diffData", diffData.length);
     }
 
+    const response = await fetch(url, {
+      method: 'HEAD',
+    })
     await parquetRead({
-      file: await asyncBufferFromUrl({url}),
+      file: await asyncBufferFromUrl({url, byteLength: response.headers.get('Content-Length')}),
       columns: ['name', 'artists', 'album_name', 'date', 'song_id', 'cover_url', 'playlist', 'position', 'commit_date'],
       rowFormat: 'object',
       onComplete: data => getLatestSongs(data)
