@@ -71,6 +71,26 @@
       .slice(0, n).map(([value]) => value);
   }
 
+  const fetchFileAsBuffer = async (url) => {
+    try {
+      // Fetch the file using the GET request
+      const response = await fetch(url);
+
+      // Check if the response is okay
+      if (!response.ok) {
+        throw new Error('Failed to fetch the file');
+      }
+
+      // Convert the response body to a buffer (ArrayBuffer)
+      const buffer = await response.arrayBuffer();
+
+      console.log('File fetched and saved as buffer:', buffer);
+
+      return buffer; // Return the buffer
+    } catch (error) {
+      console.error('Error fetching the file:', error);
+    }
+  }
 
 	onMount(async () => {
     const url = `${base}/data/historical.parquet`;
@@ -104,11 +124,8 @@
       console.log("diffData", diffData.length);
     }
 
-    const response = await fetch(url, {
-      method: 'HEAD',
-    })
     await parquetRead({
-      file: await asyncBufferFromUrl({url, byteLength: response.headers.get('Content-Length')}),
+      file: await fetchFileAsBuffer(url),
       columns: ['name', 'artists', 'album_name', 'date', 'song_id', 'cover_url', 'playlist', 'position', 'commit_date'],
       rowFormat: 'object',
       onComplete: data => getLatestSongs(data)
