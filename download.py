@@ -11,7 +11,7 @@ from yaml.loader import SafeLoader
 CWD = os.getcwd()
 
 def download(key, url):
-    cmd=f"docker run --rm -v {CWD}/tmpplaylists:/music spotdl/spotify-downloader save {url.strip()} --save-file {key}.spotdl"
+    cmd=f"docker run --rm -v {CWD}/tmpplaylists:/music spotdl/spotify-downloader save {url.strip()} --save-file {key}.spotdl --lyrics genius musixmatch"
     p=subprocess.Popen(cmd.split(" "),
                              stderr=subprocess.STDOUT,
                              stdout=subprocess.PIPE)
