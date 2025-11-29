@@ -12,20 +12,22 @@ limit = 20
 for idx in range(len(commits)):
     if idx > limit:
         break
-    print(idx, end='...')
-    res = requests.get(f'https://raw.githubusercontent.com/cristianpb/playlists/{commits[idx]["sha"]}/data.csv')
+    print(idx, end="...")
+    res = requests.get(
+        f"https://raw.githubusercontent.com/cristianpb/playlists/{commits[idx]['sha']}/data.csv"
+    )
     commit_date = commits[idx]["commit"]["author"]["date"]
     stringio_text = StringIO(res.text)
     df_tmp = pd.read_csv(stringio_text, sep=";")
     df_tmp = df_tmp.assign(
-        commit_date=lambda x: pd.to_datetime(commit_date),
+        commit_date=pd.to_datetime(commit_date),
         date=lambda x: pd.to_datetime(x.date),
-        artists=lambda x: x.artists.apply(literal_eval)
+        artists=lambda x: x.artists.apply(literal_eval),
     )
     mylist.append(df_tmp)
 
-if not os.path.exists('static/data'):
-    os.mkdir('static/data')
+if not os.path.exists("static/data"):
+    os.mkdir("static/data")
 
 df = pd.concat(mylist, ignore_index=True)
-df.to_parquet('static/data/historical.parquet')
+df.to_parquet("static/data/historical.parquet")
