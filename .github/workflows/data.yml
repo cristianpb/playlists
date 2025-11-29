@@ -44,3 +44,28 @@ jobs:
           publish_dir: static/data
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
+
+  recommendation:
+    runs-on: ubuntu-latest
+    needs: [publish]  # require tests to pass before deploy runs
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ env.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ env.python-version }}
+      - uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: install python requirements
+        run: pip install .
+      - name: Get historical data
+        run: ./venv/bin/python fetch.py
+      - name: Get historical data
+        run: ./venv/bin/python recommendation.py
+        env:
+          NOTIFICATION_URL: ${{ secrets.NOTIFICATION_URL }}
