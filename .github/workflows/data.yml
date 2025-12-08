@@ -63,9 +63,9 @@ jobs:
             ${{ runner.os }}-pip-
       - name: install python requirements
         run: pip install .
-      - name: Get historical data
-        run: ./venv/bin/python fetch.py
-      - name: Get historical data
-        run: ./venv/bin/python recommendation.py
+      - name: Get commits historical data
+        run: python3 fetch.py
+      - name: Run recommendation
+        run: python3 recommendation.py
         env:
           NOTIFICATION_URL: ${{ secrets.NOTIFICATION_URL }}
