@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
   import RecentSongsPlot from "../components/views/RecentSongs.svelte";
   import TableRows from "../components/views/TableRows.svelte";
+  import ArtistsGraph from "../components/views/ArtistsGraph.svelte";
   import BestArtists from "../components/views/BestArtists.svelte";
   import SongsArtist from "../components/views/SongsArtist.svelte";
   import { asyncBufferFromUrl, parquetRead } from 'hyparquet';
@@ -139,6 +140,8 @@
 </svelte:head>
 
 <div class="app">
+
+  <ArtistsGraph />
 
   {#if latestSongs.length > 0}
     <RecentSongsPlot {latestSongs} />
