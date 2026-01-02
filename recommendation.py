@@ -83,7 +83,7 @@ if __name__ == "__main__":
         )
         .query("playlist.str.len() > 1")
         .assign(url=lambda x: "https://open.spotify.com/track/" + x.index.astype(str))
-        .sample(1)["url"]
+        ["url"]
         .tolist()
     )
     notify_telegram(songs)
