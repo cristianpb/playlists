@@ -13,14 +13,6 @@ static/data:
 	@echo "Creating data folder"
 	@mkdir -p static/data
 
-tmpplaylists:
-	@echo "Creating tmp folder"
-	@mkdir -p tmpplaylists
-
-download-data: tmpplaylists static/data
+download-data: static/data
 	@echo "Download data"
 	@uv run download.py
-
-clean:
-	@echo "cleaning tmp folder"
-	@rm -rf tmpplaylists

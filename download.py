@@ -9,10 +9,10 @@ from yaml.loader import SafeLoader
 
 
 CWD = os.getcwd()
-
+OUTPUT_FOLDER = "tmpplaylists"
 
 def download(key, url):
-    cmd = f"docker run --rm -v {CWD}/tmpplaylists:/music spotdl/spotify-downloader:nightly save {url.strip()} --save-file {key}.spotdl --lyrics genius musixmatch"
+    cmd = f"docker run --rm -v {CWD}/{OUTPUT_FOLDER}:/music spotdl/spotify-downloader:nightly save {url.strip()} --save-file {key}.spotdl --lyrics genius musixmatch"
     p = subprocess.Popen(
         cmd.split(" "), stderr=subprocess.STDOUT, stdout=subprocess.PIPE
     )
@@ -32,7 +32,7 @@ def read_data():
         "playlist",
         "position",
     ]
-    for f in glob.glob("tmpplaylists/*.spotdl"):
+    for f in glob.glob(f"{OUTPUT_FOLDER}/" + "*.spotdl"):
         data = pd.read_json(f).assign(
             artists=lambda x: x["artists"]
             .explode()
@@ -57,6 +57,8 @@ def read_data():
 
 
 if __name__ == "__main__":
+    if not os.path.exists(OUTPUT_FOLDER):
+        os.makedirs(OUTPUT_FOLDER)
     with open("playlists.yaml", "r") as f:
         data = list(yaml.load_all(f, Loader=SafeLoader))[0]
         for key, url in data.items():
