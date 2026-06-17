@@ -19,7 +19,7 @@ tmpplaylists:
 
 download-data: tmpplaylists static/data
 	@echo "Download data"
-	@python3 download.py
+	@uv run download.py
 
 clean:
 	@echo "cleaning tmp folder"

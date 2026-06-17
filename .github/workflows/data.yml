@@ -20,18 +20,14 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ env.python-version }}
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+      - name: Install the default version of uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
       - name: Decrypt large secret
         run: ./decrypt_secret.sh
         env:
           GPG_SECRET_PASSPHRASE: ${{ secrets.GPG_SECRET_PASSPHRASE }}
       - name: install python requirements
-        run: pip install .
+        run: uv sync
       - name: get data
         run: |
           make download-data
@@ -55,17 +51,13 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ env.python-version }}
-      - uses: actions/cache@v3
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+      - name: Install the default version of uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
       - name: install python requirements
-        run: pip install .
+        run: uv sync
       - name: Get commits historical data
-        run: python3 fetch.py
+        run: uv run fetch.py
       - name: Run recommendation
-        run: python3 recommendation.py
+        run: uv run recommendation.py
         env:
           NOTIFICATION_URL: ${{ secrets.NOTIFICATION_URL }}
