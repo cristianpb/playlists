@@ -12,7 +12,7 @@ CWD = os.getcwd()
 OUTPUT_FOLDER = "tmpplaylists"
 
 def download(key, url):
-    cmd = f"docker run --rm -v {CWD}/{OUTPUT_FOLDER}:/music spotdl/spotify-downloader:nightly save {url.strip()} --save-file {key}.spotdl --lyrics genius musixmatch"
+    cmd = f"uv run spotdl save {url.strip()} --save-file {OUTPUT_FOLDER}/{key}.spotdl --lyrics genius musixmatch"
     p = subprocess.Popen(
         cmd.split(" "), stderr=subprocess.STDOUT, stdout=subprocess.PIPE
     )

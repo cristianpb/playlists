@@ -13,6 +13,9 @@ static/data:
 	@echo "Creating data folder"
 	@mkdir -p static/data
 
-download-data: static/data
+.venv/bin/spotdl:
+	@uv pip install "git+https://github.com/spotDL/spotify-downloader.git@dev" 
+
+download-data: .venv/bin/spotdl static/data
 	@echo "Download data"
 	@uv run download.py
