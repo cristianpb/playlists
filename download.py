@@ -12,8 +12,7 @@ CWD = os.getcwd()
 OUTPUT_FOLDER = "tmpplaylists"
 
 def download(key, url):
-    cmd = f"uv run spotdl save {url.strip()} --save-file {OUTPUT_FOLDER}/{key}.spotdl " \
-           "--download-ffmpeg --download-deno --lyrics genius musixmatch"
+    cmd = f"uv run spotdl save {url.strip()} --save-file {OUTPUT_FOLDER}/{key}.spotdl --lyrics genius musixmatch"
     p = subprocess.Popen(
         cmd.split(" "), stderr=subprocess.STDOUT, stdout=subprocess.PIPE
     )
