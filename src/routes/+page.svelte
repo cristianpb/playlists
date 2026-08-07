@@ -6,6 +6,7 @@
   import TableRows from "../components/views/TableRows.svelte";
   import BestArtists from "../components/views/BestArtists.svelte";
   import SongsArtist from "../components/views/SongsArtist.svelte";
+  import ArtistsPlaylistsGraph from "../components/views/ArtistsPlaylistsGraph.svelte";
   import { asyncBufferFromUrl, parquetRead } from 'hyparquet';
 
   let latestSongs = [];
@@ -144,6 +145,13 @@
     <section class="card">
       <h2 class="card-title">Recent songs</h2>
       <RecentSongsPlot {latestSongs} />
+    </section>
+  {/if}
+
+  {#if rawData.length > 0}
+    <section class="card">
+      <h2 class="card-title">Artists &amp; playlists network</h2>
+      <ArtistsPlaylistsGraph {rawData} {playlistSelection} />
     </section>
   {/if}
 
