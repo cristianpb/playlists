@@ -141,40 +141,140 @@
 <div class="app">
 
   {#if latestSongs.length > 0}
-    <RecentSongsPlot {latestSongs} />
+    <section class="card">
+      <h2 class="card-title">Recent songs</h2>
+      <RecentSongsPlot {latestSongs} />
+    </section>
   {/if}
-  <br>
-  <br>
-  {#if playlistSelection.length > 0}
-    <select bind:value={playlistChoosen} >
-      {#each playlistSelection as playlist}
-        <option value={playlist}>
-        {playlist}
-        </option>
-      {/each}
-    </select>
-  {/if}
-  <br>
-  {#if diffData.length > 0}
-    <TableRows bind:diffData = {diffData} bind:playlistChoosen = {playlistChoosen} bind:last_commits = {last_commits} />
-  {/if}
-  <br>
+
+  <section class="card">
+    <h2 class="card-title">Playlist</h2>
+
+    {#if playlistSelection.length > 0}
+      <div class="field">
+        <label class="field-label" for="playlist-select">Choose a playlist</label>
+        <select id="playlist-select" class="styled-select" bind:value={playlistChoosen} >
+          {#each playlistSelection as playlist}
+            <option value={playlist}>
+            {playlist}
+            </option>
+          {/each}
+        </select>
+      </div>
+    {/if}
+
+    {#if diffData.length > 0}
+      <div class="subsection">
+        <TableRows bind:diffData = {diffData} bind:playlistChoosen = {playlistChoosen} bind:last_commits = {last_commits} />
+      </div>
+    {/if}
+  </section>
+
   {#if dataFiltered.length > 0 && mostFrequentArtists.length > 0}
-    <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} bind:mostFrequentArtists = {mostFrequentArtists} />
+    <section class="card">
+      <h2 class="card-title">Best artists</h2>
+      <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} bind:mostFrequentArtists = {mostFrequentArtists} />
+    </section>
   {/if}
-  <br>
-  <br>
+
   {#if mostFrequentArtists.length > 0}
-    <select bind:value={artistChoosen} >
-      {#each mostFrequentArtists as artistsName}
-        <option value={artistsName}>
-        {artistsName}
-        </option>
-      {/each}
-    </select>
-  {/if}
-  <br>
-  {#if songsNames.length > 0}
-    <SongsArtist bind:songsNames = {songsNames} bind:artistChoosen = {artistChoosen} bind:playlistChoosen = {playlistChoosen} />
+    <section class="card">
+      <h2 class="card-title">Songs by artist</h2>
+      <div class="field">
+        <label class="field-label" for="artist-select">Choose an artist</label>
+        <select id="artist-select" class="styled-select" bind:value={artistChoosen} >
+          {#each mostFrequentArtists as artistsName}
+            <option value={artistsName}>
+            {artistsName}
+            </option>
+          {/each}
+        </select>
+      </div>
+
+      {#if songsNames.length > 0}
+        <div class="subsection">
+          <SongsArtist bind:songsNames = {songsNames} bind:artistChoosen = {artistChoosen} bind:playlistChoosen = {playlistChoosen} />
+        </div>
+      {/if}
+    </section>
   {/if}
 </div>
+
+<style>
+  .app {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .card {
+    background: var(--color-bg-2);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-title {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    border-bottom: 2px solid var(--color-theme-1);
+    padding-bottom: 0.4rem;
+    display: inline-block;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    max-width: 20rem;
+  }
+
+  .field-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    opacity: 0.7;
+  }
+
+  .styled-select {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.55rem 2.2rem 0.55rem 0.9rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23ff3e00'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    border: 1px solid var(--color-bg-0);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .styled-select:hover {
+    border-color: var(--color-theme-2);
+  }
+
+  .styled-select:focus {
+    outline: none;
+    border-color: var(--color-theme-1);
+    box-shadow: 0 0 0 3px rgba(255, 62, 0, 0.15);
+  }
+
+  .subsection {
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 480px) {
+    .card {
+      padding: 1.5rem 2rem 2rem;
+    }
+  }
+</style>
