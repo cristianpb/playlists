@@ -1,6 +1,6 @@
 <script>
   import * as Plot from '@observablehq/plot';
-  let { dataFiltered, playlistChoosen, mostFrequentArtists } = $props();
+  let { dataFiltered, mostFrequentArtists } = $props();
 
   let div = $state();
   let w = $state();
@@ -55,5 +55,4 @@
 
 </script>
 
-<h2>Best artist evolution in {playlistChoosen}</h2>
 <div bind:this={div} role="img" bind:clientWidth={w}></div>

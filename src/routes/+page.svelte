@@ -172,14 +172,14 @@
 
   {#if dataFiltered.length > 0 && mostFrequentArtists.length > 0}
     <section class="card">
-      <h2 class="card-title">Best artists</h2>
+      <h2 class="card-title">Best artists in {playlistChoosen}</h2>
       <BestArtists bind:dataFiltered = {dataFiltered} bind:playlistChoosen = {playlistChoosen} bind:mostFrequentArtists = {mostFrequentArtists} />
     </section>
   {/if}
 
   {#if mostFrequentArtists.length > 0}
     <section class="card">
-      <h2 class="card-title">Songs by artist</h2>
+      <h2 class="card-title">Best {[...new Set(songsNames.map(song => song.song_id))].length} songs of {artistChoosen} in {playlistChoosen}</h2>
       <div class="field">
         <label class="field-label" for="artist-select">Choose an artist</label>
         <select id="artist-select" class="styled-select" bind:value={artistChoosen} >
