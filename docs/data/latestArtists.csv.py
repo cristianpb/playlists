@@ -1,8 +1,9 @@
-import pandas as pd
-import sys
 import datetime
+import sys
 
-today = datetime.date.today()
+import pandas as pd
+
+today = datetime.datetime.now(tz=datetime.UTC).date()
 last_month = today - datetime.timedelta(days=30)
 
 ### TO REPLACE

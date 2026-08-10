@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: UTF-8 -*-
-import os
 import glob
-import yaml
+import os
 import subprocess
-import pandas as pd
-from yaml.loader import SafeLoader
 
+import pandas as pd
+import yaml
+from yaml.loader import SafeLoader
 
 CWD = os.getcwd()
 OUTPUT_FOLDER = "tmpplaylists"
@@ -60,7 +58,7 @@ if __name__ == "__main__":
     if not os.path.exists(OUTPUT_FOLDER):
         os.makedirs(OUTPUT_FOLDER)
     with open("playlists.yaml", "r") as f:
-        data = list(yaml.load_all(f, Loader=SafeLoader))[0]
+        data = next(iter(yaml.load_all(f, Loader=SafeLoader)))
         for key, url in data.items():
             download(key, url)
     read_data()

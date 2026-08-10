@@ -1,8 +1,9 @@
 import os
-import requests
-import pandas as pd
-from io import StringIO
 from ast import literal_eval
+from io import StringIO
+
+import pandas as pd
+import requests
 
 res = requests.get("https://api.github.com/repos/cristianpb/playlists/commits?sha=data")
 commits = res.json()

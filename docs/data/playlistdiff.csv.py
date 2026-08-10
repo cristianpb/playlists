@@ -1,5 +1,6 @@
-import pandas as pd
 import sys
+
+import pandas as pd
 
 ### TO REPLACE
 df = pd.read_pickle("docs/data/historical.pkl")
