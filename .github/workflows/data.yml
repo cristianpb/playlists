@@ -13,11 +13,13 @@ env:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Set up Python ${{ env.python-version }}
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ env.python-version }}
       - name: Install the default version of uv
@@ -35,13 +37,12 @@ jobs:
       - name: Set up Deno
         uses: denoland/setup-deno@v2
         with:
-          deno-version: latest
+          deno-version: v2.x
       - name: get data
         run: |
           make download-data
       - name: deploy to github pages
-        if: success()
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: data
@@ -51,12 +52,14 @@ jobs:
 
   recommendation:
     runs-on: ubuntu-latest
-    needs: [publish]  # require tests to pass before deploy runs
+    needs: [publish]
+    permissions:
+      contents: read
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Set up Python ${{ env.python-version }}
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ env.python-version }}
       - name: Install the default version of uv
